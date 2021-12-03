@@ -1,0 +1,197 @@
+@import url("./general.css");
+.modificar-producto {
+  background-color: var(--color-blue);
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error-carga{
+  font-size: 1.3rem;
+  color: rgb(145, 9, 9);
+}
+.modificar-producto .volver {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+.modificar-producto .volver a {
+  color: #fff;
+}
+.modificar-producto .modificar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+/* === FORMULARIO === */
+.modificar-producto .form {
+  text-align: center;
+  width: 60%;
+  max-width: 70vw;
+  border-radius: 10px;
+}
+
+.modificar-producto h1 {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.modificar-producto .form div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0.5rem;
+}
+
+.modificar-producto .form label {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.modificar-producto .form input,
+textarea {
+  border: none;
+  border-bottom: 1.5px solid white;
+  background-color: rgba(255, 0, 0, 0);
+  margin: 1rem;
+  padding: 0.4rem;
+  color: #fff;
+}
+
+.modificar-producto .form #imagenProducto {
+  border-bottom: none;
+  color: rgb(209, 209, 209);
+}
+.modificar-producto .form input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 3px 2px white;
+}
+
+.modificar-producto .form input::placeholder,
+textarea::placeholder {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+/* === boton === */
+.modificar-producto .form button {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  border-radius: 16px;
+  border: none;
+  padding: 0.5rem;
+  width: 9rem;
+  background-color: var(--color-red);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.modificar-producto .form button:hover {
+  box-shadow: 0px 0px 10px 4px var(--color-red);
+}
+
+@media (min-width: 700px) {
+  .modificar-producto .volver {
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  .modificar-producto .volver a {
+    font-size: 1.5rem;
+  }
+  .modificar-producto .form {
+    text-align: center;
+    width: 60%;
+    max-width: 50vw;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .modificar-producto .form label {
+    color: black;
+  }
+  .modificar-producto .form p {
+    color: red;
+    font-size: 14px;
+  }
+
+  .modificar-producto .form input,
+  textarea {
+    border-bottom: 1.5px solid var(--color-oxfordBlue);
+    color: #000;
+  }
+
+  .modificar-producto .form #imagenProducto {
+    color: var(--color-oxfordBlue);
+  }
+
+  .modificar-producto .form input:focus-visible,
+  textarea:focus-visible {
+    box-shadow: 4px 4px 5px 4px var(--color-independence);
+  }
+  .modificar-producto .form input::placeholder,
+  textarea::placeholder {
+    color: var(--color-black);
+  }
+
+  .modificar-producto .form .select {
+    align-items: center;
+  }
+  .modificar-producto .form select {
+    width: 60%;
+    
+  }
+}
+
+@media (min-width: 1024px) {
+  .modificar-producto .form {
+    width: 60%;
+    max-width: 40vw;
+    box-shadow: 0px 0px 7px 1px var(--color-oxfordBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modificar-producto .form div {
+    margin-bottom: 1rem;
+    width: 60%;
+    max-width: 75%;
+  }
+
+  .modificar-producto .form label {
+    color: black;
+  }
+
+  .modificar-producto .form input::placeholder,
+  textarea::placeholder {
+    color: var(--color-black);
+    text-align: center;
+  }
+  .modificar-producto .form input, textarea{
+    font-size: 1.6rem;
+}
+  .modificar-producto .form #imagenProducto {
+    margin: auto;
+  }
+  .modificar-producto .form .select {
+    align-items: center;
+  }
+  .modificar-producto .form select {
+    width: 75%;
+    font-size: 1.6rem;
+  }
+}
+

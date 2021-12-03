@@ -1,0 +1,86 @@
+[
+    {
+    
+    "id":"1",
+    "nombre":"spiderman",
+    "imagen":"580b57fbd9996e24bc43c05d.png"
+ 
+},
+{   
+     "id":2,
+
+    "nombre":"Thor",
+    "imagen":"580b57fbd9996e24bc43c072.png"
+   
+},
+{   
+    "id":2,
+
+   "nombre":"Ant Man",
+   "imagen":"580b57fbd9996e24bc43c014.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Dr Doom",
+   "imagen":"favpng_marvel-avengers-alliance-doctor-doom-marvel-comics-marvel-universe.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Capitan Marvel",
+   "imagen":"favpng_marvel-avengers-alliance-carol-danvers-iron-man-hulk-captain-america.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Capitan America",
+   "imagen":"5872824cf3a71010b5e8ef0f.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Thanos",
+   "imagen":"5f4bff42a1c43a0004a0a520.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Hawkeye",
+   "imagen":"580b57fbd9996e24bc43c046.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Hulk",
+   "imagen":"580b57fbd9996e24bc43c047.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Iron Man",
+   "imagen":"ironmanflotando.png"
+  
+},
+{   
+    "id":2,
+
+   "nombre":"Loki",
+   "imagen":"580b57fbd9996e24bc43c07d.png"
+  
+},
+{    
+    "id":3,
+
+    "nombre":"vision",
+    "imagen":"580b57fbd9996e24bc43c083.png"
+
+}
+]

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+
+<body class="quizz">
+    <div class="fondo2"></div>
+
+ 
+    <%- include('./partials/header') %>
+
+    <div class="titulogeneral">
+        <h2 class="TIENDA">Ropa</h2>
+      </div>
+
+    <% ropa.products.forEach(ropaa => { %>
+        <div class="productostotales">
+        <article class="cadadestacado2">
+            <a href="/productos/detail/<%= ropaa.id %> "><img  class="cadadestacado2" src="/images/merchandising/<%=ropaa.image%> " alt=""></a>
+            <div class="titulodestacado2">
+            <h3><%= ropaa.title%> </h3>
+            <P><%= ropaa.description %></P>
+            </div>
+
+        </article>
+    </div>
+
+    <% }) %>
+               
+             
+              
+
+
+
+
+
+
+
+
+
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/scripts') %>

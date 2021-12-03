@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+
+<body class="quizz">
+    <div class="fondo2"></div>
+
+ 
+    <%- include('./partials/header') %>
+    <div class="titulogeneral">
+        <h2 class="TIENDA">Figuras</h2>
+      </div>
+
+
+    <% figura.products.forEach(figura => { %>
+        <div class="productostotales">
+        <article class="cadadestacado2">
+            <a href="/productos/detail/<%= figura.id %> "><img  class="cadadestacado2" src="/images/merchandising/<%=figura.image%> " alt=""></a>
+            <div class="titulodestacado2">
+            <h3><%= figura.title %> </h3>
+            <P><%= figura.description %></P>
+            </div>
+
+        </article>
+    </div>
+
+    <% }) %>
+               
+             
+              
+
+
+
+
+
+
+
+
+
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/scripts') %>

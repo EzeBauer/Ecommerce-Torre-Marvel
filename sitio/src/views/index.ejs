@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+
+      <main>
+
+        <%- include('./partials/carrousel') %>
+          <%- include('./partials/menuVentas') %>
+
+            </div>
+            <div class="titulogeneral">
+              <h2 class="TIENDA">TIENDA</h2>
+            </div>
+
+            
+            
+            <section class="categorias"> 
+              <% category.forEach(categoria => { %>
+              <article class="cadacategoria zoom">
+                <img src="../images/merchandising/<%=categoria.products[0].image%>" alt="">
+                <div class="titulocategoria">
+                  <h3><%= categoria.name %> </h3>
+                  <P>Todo lo que buscas a un click</P>
+                  <div class="vermas">
+                    <a href="/productos#<%= categoria.name.toUpperCase()%>">
+                      <h4>ver mas</h4>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <% })%>
+            </section>
+
+            <div class="titulogeneral">
+              <h2 class="TIENDA">PRODUCTOS</h2>
+            </div>
+
+
+            <section class="destacados">
+
+
+              <% for( let index = 0; index < 4; index++ ) { %>
+               
+             
+                <article class="cadadestacado">
+                   
+                  <a href="/productos/detail/<%= products[index].id %>"><img src="/images/merchandising/<%=products[index].image%> " alt=""></a>
+                  <div class="titulodestacado">
+                    <h3><%= products[index].title %> </h3>
+                    <P><%= products[index].description %></P>
+                  </div>
+  
+                </article>
+                <% } %>
+            
+            </section>
+            <section class="destacados destacados2">
+
+
+
+             
+              <% for( let index = 5; index < 9; index++ ) { %>
+               
+             
+                <article class="cadadestacado">
+                   
+                  <a href="/productos/detail/<%= products[index].id %>"><img src="/images/merchandising/<%=products[index].image%> " alt=""></a>
+                  <div class="titulodestacado">
+                    <h3><%= products[index].title %> </h3>
+                    <P><%= products[index].description %></P>
+                  </div>
+  
+                </article>
+                <% } %>
+
+            </section>
+
+
+
+            <div class="verdemasproductos zoom">
+
+              <a href="/productos">
+                <h2 class="verproductos">Ver mas productos</h2>
+              </a>
+            </div>
+
+
+
+            <div class="titulogeneral">
+
+              <h2 class="TIENDA">OFERTAS</h2>
+            </div>
+
+            <section class="destacados">
+            
+
+    
+              <% productsDiscount.forEach(product => { %>
+                <article class="cadadestacado col-3">
+                  <a href="/productos/detail/<%= product.id %>"><img src="/images/merchandising/<%=product.image%>" alt="<%= product.title %> "></a>
+                  <div class="titulodestacado">
+                    <h3><%= product.title %> </h3>
+                    <P><%= product.discount %>% de descuento</P>
+                  </div>
+    
+                </article>
+              <% }) %>
+          
+
+            </section>
+
+
+
+      </main>
+
+
+
+
+
+      <%- include('./partials/footer') %>
+
+        <%- include('./partials/scripts') %>
+  </body>
+
+</html>

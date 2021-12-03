@@ -1,0 +1,283 @@
+
+
+@media (min-width: 320px){
+    .secciondeproductos .titulogeneral{
+        margin-top: 10px;
+    }
+    .ofertones{
+        /* background-image:url("../img/b7531fc8c5986ec3560bde6e789fdf12.jpg"), linear-gradient(red, blue); */
+        background-size: contain;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        box-shadow: 0px 0px 100px rgb(255, 31, 31);   
+
+        
+    }
+    .productodeoferta1{
+        width: 50%;
+    }
+    .textito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .ofertones img{
+        
+        align-self: center;
+        width: 100%;
+    }
+    .ofertones h3{
+        -webkit-text-stroke: 0.6px rgb(208, 255, 0);
+        font-size: 1.2rem;
+        color: red;
+        text-align: center;
+    
+    
+    }
+    .ofertones h2{
+        -webkit-text-stroke: 0.6px rgb(102, 255, 0);
+        font-size: 1.2rem;
+        color: red;
+        text-align: center;
+        text-align: center;
+        color: red;
+        font-size: 1rem;
+        
+    
+    }
+    
+    .youtube iframe{
+        width: 100%;
+        height: 20rem;
+        margin: 0 !important;
+    }
+    .promo img{
+        width: 100%;
+    }
+    .noticia{
+        margin: 0 !important;
+        display: flex;
+        color: white;
+
+    
+    }
+    .imagenoticia{
+        width: 50%;
+        box-shadow: 0px 0px 20px rgb(255, 31, 31);   
+
+    }
+    .imagenoticia img{
+        width: 100%;
+    }
+    .textonoticia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        font-size: 0.8rem;
+        width: 50%;
+    
+    }
+    .fondo{
+        background-image:url("/images/b7531fc8c5986ec3560bde6e789fdf12.jpg"), linear-gradient(red, blue);
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      
+    }}
+@media (min-width: 768px){
+    .secciondeproductos .titulogeneral{
+        margin-top: 10px;
+    }
+    .ofertones{
+        /* background-image:url("../img/b7531fc8c5986ec3560bde6e789fdf12.jpg"), linear-gradient(red, blue); */
+        background-size: contain;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .productodeoferta1{
+        width: 50%;
+    }
+    .textito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .ofertones img{
+        
+        align-self: center;
+        width: 100%;
+    }
+    .ofertones h3{
+        font-size: 2rem;
+        color: red;
+        text-align: center;
+    
+    
+    }
+    .ofertones h2{
+        text-align: center;
+        color: red;
+        font-size: 2rem;
+    
+    }
+    
+    .youtube iframe{
+        width: 100%;
+        height: 30rem;
+        margin: 0 !important;
+    }
+    .promo img{
+        width: 100%;
+    }
+    .noticia{
+        margin: 0 !important;
+        display: flex;
+        color: white;
+
+    
+    }
+    .imagenoticia{
+        width: 50%;
+    }
+    .imagenoticia img{
+        width: 100%;
+    }
+    .textonoticia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        font-size: 1.5rem;
+        width: 50%;
+    
+    }
+    .fondo{
+        background-image:url("/images/b7531fc8c5986ec3560bde6e789fdf12.jpg"), linear-gradient(red, blue);
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      
+    }}
+@media (min-width: 1024px){
+  
+    .fondo{
+        background-image:url("/images/b7531fc8c5986ec3560bde6e789fdf12.jpg"), linear-gradient(red, blue);
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      
+    }
+    .ofertones{
+       z-index: 200;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .productodeoferta1{
+        width: 50%;
+    }
+    .textito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .ofertones img{
+        
+        align-self: center;
+        width: 100%;
+    }
+    .ofertones h3{
+        font-size: 3rem;
+        color: red;
+        text-align: center;
+    
+    
+    }
+    .ofertones h2{
+        text-align: center;
+        color: red;
+        font-size: 4rem;
+    
+    }
+    
+    .youtube iframe{
+        width: 100%;
+        height: 60rem;
+        margin: 0 !important;
+    }
+    .promo img{
+        width: 100%;
+    }
+    .noticia{
+        box-shadow: 20px 20px 100px rgb(255, 31, 31);   
+        color: white;
+        margin: 0 !important;
+        display: flex;
+    
+    }
+    .imagenoticia{
+        width: 50%;
+        box-shadow: 20px 20px 100px rgb(255, 31, 31);   
+
+    }
+    .imagenoticia img{
+        width: 100%;
+
+    }
+    .textonoticia{
+        box-shadow: 20px 20px 100px rgb(255, 31, 31);   
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        font-size: 4rem;
+        width: 50%;
+    
+    }}
+
+
+
+
+
+
+
+

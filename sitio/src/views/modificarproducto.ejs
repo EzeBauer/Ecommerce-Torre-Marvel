@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+
+  <body class="modificar-producto">
+    <h1>Modificar Producto</h1>
+    <div class="volver">
+      <a href="/productos">
+        << Volver a productos</a>
+          <a href="/">Ir a Home >></a>
+    </div>
+    <main class="modificar">
+      <form action="/productos/modificar/<%= producto.id %>?_method=PUT" method="POST" class="form" enctype="multipart/form-data">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombreProducto" name="title" value="<%=locals.old ? old.title :  producto.title %>" />
+          <span class="error-carga errorName"><%= locals.errores && errores.name ? errores.name.msg : null %></span>
+        </div>
+        <div>
+          <label for="imagen">Imagen</label>
+          <input type="file" name="image" id="imagenProducto" />
+          <span class="error-carga errorImagen"><%= locals.errores && errores.image ? errores.image.msg : null %></span>
+          <div id="preview"></div>
+        </div>
+        <div>
+          <label for="precioProducto">Precio</label>
+          <input type="number" id="precioProducto" name="price" value="<%=locals.old ? old.price :  producto.price  %>" />
+          <span class="error-carga errorPrecio"><%= locals.errores && errores.price ? errores.price.msg : null %></span>
+        </div>
+        <div>
+          <label for="descuento">Descuento</label>
+          <input type="number" id="descuento" name="discount" value="<%=locals.old ? old.discount :  producto.discount  %>" />
+          <span class="error-carga errorDesc"><%= locals.errores && errores.discount ? errores.discount.msg : null %></span>
+        </div>
+        <div>
+          <label for="descripcion">Descripción del producto</label>
+          <textarea name="description" id="descripcion" cols="8" rows="3"><%=locals.old ? old.description :  producto.description  %></textarea>
+          <span class="error-carga error-desc"><%= locals.errores && errores.description ? errores.description.msg : null %></span>
+        </div>
+
+        <div class="select">
+          <label for="categoria">Categoría</label>
+          <select name="categoryId" id="categoria">
+           <% categorias.forEach(categoria => { %>
+              <option value="<%= categoria.id %>" <%= categoria.name == producto.category.name ? 'selected' : null %> ><%= categoria.name %></option>
+           <% }) %> 
+               
+          </select>
+          <span class="error-carga"><%= locals.errores && errores.categoryId ? errores.categoryId.msg : null %></span>
+        </div>
+
+        <button type="submit" class="btnEnviar">GUARDAR</button>
+        <div >
+          <span class="msjGeneral error-carga "></span>
+          </div>
+      </form>
+    </main>
+    <%- include('./partials/scripts')  %> 
+    
+    <script src="/javascript/validateModificar.js"></script>
+    <script src="/javascript/imagenProducto.js"></script>
+  </body>
+
+</html>

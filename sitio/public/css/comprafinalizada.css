@@ -1,0 +1,21 @@
+.eltextoprincipal{
+    width: 100%;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    color: white;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000
+
+
+}
+.paravolveratras{
+    width: 100%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    color: greenyellow;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000
+
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head') %>
+
+    <body class="perfil">
+        <%- include('./partials/header') %>
+            <div class="register">
+                <main class="container mt-5 mb-5">
+                    <div class="row m-auto">
+                        <div class="col-12 col-lg-6 ms-1 border border-2">
+                            
+                            <nav class="navbar navbar-expand-lg navUser navbar-light text-light bg-light">
+                                <div class="container-fluid">
+                                    <p class="navbar-brand opciones" href="#">Opciones</p>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarText">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a href="#modificar" id='modificar'class="nav-link active">Modificar Contraseña</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#eliminar" id='eliminar' class="nav-link">Eliminar Usuario</a>
+                                        </li> 
+                                        <li class="nav-item">
+                                            <a class="nav-link" id='cambiarAvatar' href="#cambiarAvatar">Cambiar Avatar</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                                <div class="contenedorFormulario">
+                                    <form action="/users/updatePass/<%= user.id %>?_method=PUT" class="row   <%= display ? display :  "d-none"%> formModificar mt-5" method="POST"  novalidate>
+                                        <h5 class="card-title text-center mb-5">Modificar contraseña</h5>
+                                        <div class="col-12 col-md-6 ">
+                                            <label for="exampleInputPassword1" class="form-label">Cambiar
+                                                contraseña</label>
+                                            <input type="password" class="form-control passMod1" id="exampleInputPassword1" name="password">
+                                                <span class="text-danger font-weight-bold ">
+                                                <%=locals.errores && locals.errores.password ? errores.password.msg : null%></span>
+                                                <span class="text-danger font-weight-bold  error"></span>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="exampleInputPassword2" class="form-label">Reingresá tu contraseña</label>
+                                            <input type="password" class="form-control passMod2" id="exampleInputPassword2" name="password2">
+                                        </div>
+                                        <div class="container text-center">
+                                            <button type="submit" class="btn btn-success my-3">Guardar</button>
+                                            <a href="/users/perfil" class="btn btn-secondary">Cancelar</a>
+                                        </div>
+                                         
+                                    
+                                    </form>
+
+                                    <form action="/users/updateAvatar/<%= user.id %>?_method=PUT" class="row d-none formCambiarAvatar align-items-center justify-content-center" method="POST" novalidate enctype="multipart/form-data">
+                                        <h5 class="card-title col-12 text-center mt-5 ">Modificar Avatar</h5>
+                                        <div class="col-12 col-md-6 mb-3 d-flex align-items-center justify-content-center mt-5">
+                                                <label for="avatar" class="btn btn-primary my-3 h-50">Subir imagen</label>
+                                                <input type="file" name="avatar" id="avatar" hidden>
+                                        </div>
+                                       
+                                        <div class="contAvatarPreview col-32 col-md-6 mb-3 d-flex align-items-center justify-content-center mt-5">
+                                                
+                                        </div>
+                                        <div>
+                                            <span class="errorImagen"></span>
+                                        </div>
+                                        <div class="container text-center">
+                                            <button type="submit" id="guardarImg" class="btn btn-success my-3">Guardar</button>
+                                            <a href="/users/perfil" class="btn btn-secondary">Cancelar</a>
+                                        </div>
+                                            
+                                    
+                                    </form>
+
+                                    <form action="/users/delete?_method=DELETE" method="post" class="<%= displayError ? displayError :  "d-none"%> formEliminar mt-5 flex-column  text-center align-items-center">
+                                        <h5 class="card-title text-center mb-5">Ingrese su contraseña para <span class="text-danger">Eliminar</span></h5>
+                                        <div class="text-center d-flex flex-column  align-items-center">
+                                            <label for="exampleInputEmail1" class="form-label h4">Contraseña</label>
+                                            <input type="password" class="form-control w-50 passEliminar" id="exampleInputEmail1" aria-describedby="emailHelp" name="password">
+                                        </div>
+                                        <span class="text-danger  small">
+                                            <%= locals.errores && locals.errores.password ? errores.password.msg : null %>
+                                        </span>
+                                        <span class="text-danger font-weight-bold  errorPassword"></span>
+                                        <button type="submit" class="btn btn-danger my-3">Confirmar</button>
+                                      </form>
+                                </div>
+                        </div>
+                        <div class="col-md-12 col-lg-5 border border-2">
+                                <div class="row text-center flex-column contenedor">
+                                    <div class="col-12">
+                                   
+                                        <div class="container col-7">
+                                            <img class="img-fluid rounded-start avatar-user" src="/images/users/<%= user.avatar %>" alt="avatar">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mx-auto mt-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">PERFIL DE USUARIO</h5>
+                                            <div class="row" >
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <label for="exampleInputName" class="form-label">Usuario</label>
+                                                    <input type="text" readonly class="form-control m-0" id="exampleInputName"
+                                                        aria-describedby="emailHelp" name="name" value="<%= user.nameUser %>">
+                                                
+                                                </div>
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp" name="email" readonly
+                                                        value="<%= user.email %>">
+                                                
+                                                </div>
+                                                <div class="col-12 col-md-6 mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Rol</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp" name="email" readonly
+                                                        value="<%= user.rol %>">
+                                                
+                                                </div>
+                                            
+                            
+                                            
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            </div>
+
+
+            </main>
+            </div>
+            <%- include('./partials/footer') %>
+
+            <%- include('./partials/scripts') %>
+    <script src="/javascript/validateModPass.js"></script>
+    <script src="/javascript/modificarPerfil.js"></script>
+    <script src="/javascript/validateEliminar.js"></script>
+    </body>
+
+</html>

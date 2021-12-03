@@ -1,0 +1,320 @@
+.youtube{
+    width: 100%;
+    margin: auto;
+}
+.videoYoutube{
+    max-width: 70rem !important;
+    max-height:70rem;
+    padding: 0px;
+    margin-top: 1rem !important;
+    margin-left: auto !important;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    
+
+}
+.videoYoutube iframe{
+    width: 70rem;
+    height: 70rem;
+}
+
+
+@media (min-width: 319px){
+    .youtube{
+        width: 100%;
+        margin: auto;
+        border-radius: 5% !important;
+
+    }
+    .videoYoutube{
+        max-width: 20rem !important;
+        max-height:20rem;
+        padding: 0px;
+        margin-top: 1rem !important;
+        margin-left: auto !important;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        border-radius: 5% !important;
+
+        
+    
+    }
+    .videoYoutube iframe{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 5% !important;
+
+    }
+    
+    .fondo2{
+        background-image: url("../img/0e6056e77dadf86ab7f51438f8565313.jpg");
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      
+    }
+    @keyframes bordeadoflashero {
+        0%   {border-radius: 0px;background-color: rgb(234, 0, 0,0.5);}
+        25%  {border-radius: 7px;background-color: rgb(248, 251, 33,0.5);}
+        35%  {border-radius: 0px;background-color: rgb(20, 16, 253,0.5);}
+        50%  {border-radius: 10px;background-color: rgb(1, 233, 5,0.5);}
+
+        60%  {border-radius: 8px;background-color: rgb(233, 1, 229,0.5);}
+        80%  {border-radius: 15px;background-color: rgb(233, 121, 1,0.5);}
+        100% {    border-radius: 0px ;
+            background-color: rgb(234, 0, 0,0.5);}
+      }
+    
+  
+    
+    .descripcion{
+        
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Bebas Neue';
+    
+    }
+    .nosotros1{
+        width: 30% !important; 
+    }
+    .nosotros1 img{
+        width: 100% !important;
+    }
+    .nosotros3{
+        width: 30% !important; 
+    }
+    .nosotros3 img{
+        width: 100% !important;
+    }
+    .nosotros2 h3{
+        animation-name: bordeadoflashero;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        font-family: 'Bebas Neue';
+        height: 50%;
+        font-size: 2rem;
+        text-align: center;
+        background-color: red;
+        border: blue 4px outset;
+    
+    }
+    .titulosobrenosotros h2{
+        text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            1px 7px 1px #919191,
+            1px 8px 1px #919191,
+            1px 9px 1px #919191,
+            1px 10px 1px #919191,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+        text-align: center;
+        color: black;
+        background-color: red;
+        border: blue 4px outset;
+        font-size: 3rem;
+        font-family: 'Bebas Neue';
+    
+    
+    
+    
+    }
+    .nosotros4{
+        width: 100%;
+    
+    }
+    .nosotros4 img{
+        width: 100%;
+        
+    }
+}
+@media (min-width: 768px){
+    .youtube{
+        width: 100%;
+        margin: auto;
+        border-radius: 5% !important;
+
+    }
+    .videoYoutube{
+        max-width: 50rem !important;
+        max-height:50rem;
+        padding: 0px;
+        margin-top: 1rem !important;
+        margin-left: auto !important;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        border-radius: 5% !important;
+
+        
+    
+    }
+    .videoYoutube iframe{
+        width: 50rem;
+        height: 50rem;
+        border-radius: 5% !important;
+
+    }
+    
+    .descripcion{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Bebas Neue';
+    
+    }
+    .nosotros1{
+        width: 30% !important; 
+    }
+    .nosotros1 img{
+        width: 100% !important;
+    }
+    .nosotros3{
+        width: 30% !important; 
+    }
+    .nosotros3 img{
+        width: 100% !important;
+    }
+    .nosotros2 h3{
+        font-family: 'Bebas Neue';
+    
+        font-size: 3rem;
+        text-align: center;
+        background-color: red;
+        border: blue 4px outset;
+    
+    }
+    .titulosobrenosotros h2{
+        text-align: center;
+        color: black;
+        background-color: red;
+        border: blue 4px outset;
+        font-size: 4rem;
+        font-family: 'Bebas Neue';
+    
+    
+    
+    
+    }
+    .nosotros4{
+        width: 100%;
+    
+    }
+    .nosotros4 img{
+        width: 100%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px){
+    .youtube{
+        width: 100%;
+        margin: auto;
+        border-radius: 5% !important;
+
+    }
+    .videoYoutube{
+        max-width: 70rem !important;
+        max-height:70rem;
+        padding: 0px;
+        margin-top: 1rem !important;
+        margin-left: auto !important;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        border-radius: 5% !important;
+    
+    }
+    .videoYoutube iframe{
+        width: 70rem;
+        height: 70rem;
+        border-radius: 5% !important;
+
+    }
+    
+    
+    
+    .descripcion{
+  
+    
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue';
+
+}
+.nosotros1{
+    width: 30% !important; 
+}
+.nosotros1 img{
+    width: 100% !important;
+}
+.nosotros3{
+    width: 30% !important; 
+}
+.nosotros3 img{
+    width: 100% !important;
+}
+.nosotros2 h3{
+    font-family: 'Bebas Neue';
+
+    font-size: 4rem;
+    height: 50%;
+    text-align: center;
+    background-color: red;
+    border: blue 4px outset;
+
+}
+.titulosobrenosotros h2{
+    text-align: center;
+    color: black;
+    background-color: red;
+    border: blue 4px outset;
+    font-size: 6rem;
+    font-family: 'Bebas Neue';
+
+
+
+
+}
+.nosotros4{
+    width: 100%;
+
+}
+.nosotros4 img{
+    width: 100%;
+    
+}
+
+}
+
+
+
+
+
+
+
+
+

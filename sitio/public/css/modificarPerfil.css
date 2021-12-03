@@ -1,0 +1,23 @@
+@media (min-width: 700px) {
+    .modificarPerfil .contenedor{
+        flex-direction: row !important;
+    }
+    .modificarPerfil .btn{
+        font-size: 1.6rem;
+    }
+    .modificarPerfil {
+        text-align: center !important;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .modificarPerfil .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .modificarPerfil .card-body .row{
+        width: 50%!important;
+        
+    }
+}
+  

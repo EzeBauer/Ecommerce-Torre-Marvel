@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+      <%- include('./partials/carrousel') %>
+        <%- include('./partials/menuVentas') %>
+
+          <main class="contactito">
+            <div class="cartita">
+
+              <form class="contacto needs-validation" id="formContacto"  action="https://formspree.io/f/mvodwbop"
+              method="POST" novalidate>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" name="email"
+                      placeholder="laviudanegra@gmail.com" required>
+                      <div class="text-danger errorEmail"></div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre completo</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nombre" name="Nombre"
+                      placeholder="NoSoyBatman Nirobin" required>
+                      <div class="text-danger errorName"></div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Apellido</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="apellido" name="Apellido" placeholder="Rodriguez" required>
+                    <div class="text-danger errorApellido"></div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Numero de telefono</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="telefono" name="Numero" placeholder="123...456?" required>
+                     <div class="text-danger errorTelefono"></div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Pais </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Wakanda" required>
+                     <div class="text-danger errorPais"></div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Genero</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="genero" name="Genero"
+                      placeholder="Expresanos como te identificas" required>
+                      <div class="text-danger errorGenero"></div>
+                  </div>
+                </div>
+                <div class="form-group ">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Dejanos tu mensaje</label>
+                  <div class="col-sm-10">
+                    <textarea rows="12" col="1" type="text" class="form-control jaja textarea2" name="mensaje"
+                      id="inputPaswor" required></textarea>
+                      <div class="text-danger errorDescripcion"></div>
+                  </div>
+                </div>
+                <div class="error-empty cont-input text-danger"></div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Enviarlo a la torre stark</button>
+                  </div>
+                </div>
+              </form>
+
+
+            </div>
+            <div class="imagendecontacto">
+              <img src="../images/580b57fbd9996e24bc43c017.png" alt="">
+            </div>
+
+
+          </main>
+          <%- include('./partials/footer') %>
+    
+    
+         
+          <script src="/javascript/validContactos.js"></script>
+
+
+            <%- include('./partials/scripts') %>
+
+
+
+  </body>
+
+</html>

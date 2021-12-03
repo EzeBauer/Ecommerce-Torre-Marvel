@@ -1,0 +1,31 @@
+@import url('./general.css');
+@import url('./index.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./registro.css');
+@import url('./login.css');
+@import url('./home.css');
+@import url('./carrito.css');
+@import url('./glider.css');
+@import url('./descripcion-producto.css');
+@import url('./kids.css');
+@import url('./quiz.css');
+@import url('./novedades.css');
+@import url('./modificarproducto.css');
+@import url('./cargadeproducto.css');
+@import url('./contactos.css');
+@import url('./sobrenosotros.css');
+@import url('./productostotales.css');
+@import url('./perfil.css');
+@import url('./modificarPerfil.css');
+@import url('./comprafinalizada.css');
+@import url('./adminIndex.css');
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+

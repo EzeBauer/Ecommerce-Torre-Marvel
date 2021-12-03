@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+
+    <main class="descripcion-producto">
+      <article class="producto-article">
+        <div class="producto-article-imagen">
+          <p><a href="/">INICIO</a> > <a href="/productos/<%= producto.category.name %>"><%= producto.category.name %></a>><%= producto.title %><%= producto.name %></p>
+          <img src="/images/merchandising/<%= producto.image %>" />
+        </div>
+        <div class="producto-article-cont-descripcion">
+          <div class="producto-article-cont-descripcion1">
+            <div class="textodescripcion">
+           
+              <h6><%= producto.title %> </h6>
+              <h5><%= producto.description %></h5>
+            </div>
+
+            <div>
+              <span>$<%= producto.price %></span>
+              <p>Ver cuotas</p>
+            </div>
+          </div>
+          <div class="producto-article-cont-descripcion-comprar">
+             <% if (locals.isLogged) { %>
+            <button class="producto-article-cont-descripcion-comprar-button">
+              <h3 class="carrito"><i class="fas fa-shopping-cart"></i> <a id="botondeagregaralcarrito" href="#"onclick="agregarItem(event,'<%=producto.id%>')">Agregar al carrito</a> </h3>
+            </button>
+           
+            <% }else{%>
+               <button class="producto-article-cont-descripcion-comprar-button">
+              <h3 class="carrito"><i class="fas fa-shopping-cart"></i> <a id="botondeagregaralcarrito" href="#" class="deslogueado" onclick="">Agregar al carrito</a> </h3>
+            </button>
+              <% } %>
+          </div>
+          <div class="tarjetadeladescripciondelproductoalfinal">
+            <img src="../images/tarjetas.PNG" alt="" />
+          </div>
+        </div>
+
+      
+      </article>
+      <div class="producto-article-cont-descripcion-comprar-imagen">
+        <img class="metodos" src="/images/tarjetas.PNG" />
+      </div>
+   
+  
+ 
+  <div class="relacionados mt-5">
+    <h4>Productos relacionados</h4>
+    <hr>
+    <div class="glider-contain">
+      <div class="glider ">
+        <% relacionados.forEach(producto => { %>
+          <div class="card mb-3  p-5 cardGlider">
+          <div class="d-flex flex-column align-items-center ">
+            <a href="/productos/detail/<%= producto.id %> ">
+            <img class="w-100 tarjetaRelacionados" src="/images/merchandising/<%= producto.image %>" alt=""></a>
+           
+            <p class="mt-4"><%= producto.title %> </p>
+      
+          </div>
+        </div>
+        <% }) %>
+       
+      </div>
+      <button aria-label="Previous" class="glider-prev">«</button>
+      <button aria-label="Next" class="glider-next">»</button>
+      <div role="tablist" class="dots"></div>
+    </div>
+  </div>
+  
+    </main>
+    
+ 
+    <%- include('./partials/footer') %>
+     <%- include('./partials/scripts') %>
+     <script src="/javascript/productDetail.js"></script>
+     <script src="/javascript/alert.js"></script>
+    
+        
+  </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+
+</html>
+

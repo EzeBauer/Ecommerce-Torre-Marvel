@@ -1,0 +1,11 @@
+[
+    {
+        "id":1,
+        "nombre":"Spider-man",
+        "imagen":"",
+        "precio":1500,
+        "stock":32,
+        "descripcion":"Lorem ipsum",
+        "categoria":"figuras"
+    }
+]

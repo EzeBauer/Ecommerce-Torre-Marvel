@@ -1,0 +1,56 @@
+[
+ {
+  "id": 1,
+  "usuario": "cristian",
+  "password": "$2a$10$sobMr/uBXEYeq6ArEWehAucX1SHSc/9tDD6/FeX8JgBJMMM82WoAS",
+  "nombre": "cristian lell",
+  "email": "cristianlell24@gmail.com",
+  "imagenUsuario": "C.jpg",
+  "rol": "usuario"
+ },
+ {
+  "id": 2,
+  "usuario": "EzeBauer",
+  "password": "$2a$10$lzRgsvPOsJTWGJNR0wNns.KH/pZCYxmsS1CenvNVYKjmWEhojkFiW",
+  "nombre": "Carlos Ezequiel",
+  "email": "bauereze@gmail.com",
+  "imagenUsuario": "E.jpg",
+  "rol": "usuario"
+ },
+ {
+  "id": 3,
+  "usuario": "lore",
+  "password": "$2a$10$Ujz9TqEOLo2ghEhWBhEj4.Uqq0uQjISp/UBDBC1/MX8vZflOgufaW",
+  "nombre": " enojosa",
+  "email": "bauerezequiel@yahoo.es",
+  "imagenUsuario": "1629812687948_img_.jpg",
+  "rol": "admin"
+ },
+ {
+  "id": 4,
+  "usuario": "ivaneldestructor",
+  "password": "$2a$10$dGZOdjRKxN0yJ.DNR1VbHu3aEIC8PTR3EJzsY9y88iQDw/mmVtWU2",
+  "nombre": "ivan lezcano",
+  "email": "lezcanoivangabriel@gmail.com",
+  "imagenUsuario": "I.jpeg",
+  "rol": "admin"
+ },
+ {
+  "id": 5,
+  "usuario": "ezequiel",
+  "password": "$2a$10$Qq4F.CPZkk5Y/yxDsHCRYuuwuYpPX49sM6XQjgaejkXyiXWB9kGLS",
+  "nombre": "ezequiel bauer",
+  "email": "eze@gmail.com",
+  "imagenUsuario": "E.jpg",
+  "rol": "usuario"
+ },
+ {
+  "id": 6,
+  "usuario": "cristian",
+  "password": "$2a$10$jBNKrhnuRbdej98wz83nhuOXeYaZlrdNzmP5y6UcwEDXQf5tgmlPO",
+  "nombre": "cristian lell",
+  "email": "cristianlell9@gmail.com",
+  "imagenUsuario": "C.jpg",
+  "rol": "usuario"
+ }
+]

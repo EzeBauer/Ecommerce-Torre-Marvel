@@ -1,0 +1,450 @@
+@import url("./general.css");
+
+.registro-body {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: var(--color-oxfordBlue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.registro-body .titulo {
+  margin-bottom: 1rem;
+}
+.registro-body .subtitulo {
+  font-size: 1.4rem !important;
+}
+.registro {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--color-oxfordBlue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* === logo-info === */
+
+.registro .logo-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/* === logo === */
+
+.registro .logo-info .img {
+  width: 31%;
+  height: 90%;
+  margin-left: -1rem;
+}
+.registro .logo-info img {
+  width: 100%;
+  height: 100%;
+}
+
+/* === info === */
+
+.registro .logo-info .info {
+  width: 70%;
+  margin-right: 0.5rem;
+}
+
+.registro .logo-info .info h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.registro .logo-info .info p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.registro .registrarse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+/* === cuenta-google === */
+
+.registro .cuenta-google {
+  margin: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.registro .cuenta-google a {
+  color: var(--color-red);
+}
+
+/* === inputs === */
+
+.registro .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 23rem;
+}
+.registro .inputs input{
+  margin: 0 !important;
+}
+.registro .inputs .invalid-feedback {
+  font-family: "Ubuntu";
+  font-size: 1.2rem !important;
+  } 
+.registro .inputs div {
+  margin-bottom: 1rem;
+}
+
+.registro .inputs label {
+  font-size: 1.6rem;
+}
+
+.registro .inputs input {
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.registro .inputs input:hover {
+  outline: none;
+}
+.registro .inputs input:focus-visible {
+  outline: none;
+  border: 2px solid var(--color-red);
+}
+.registro span {
+  font-size: 1.2rem;
+  margin-top: -1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #c2381a;
+  font-weight: 500;
+}
+
+/* === btn-registrarse === */
+
+.registro .btn-registrarse {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  border-radius: 16px;
+  border: none;
+  padding: 0.8rem;
+  background-color: var(--color-red);
+  color: white;
+  margin-bottom: 1rem;
+}
+.registro .btn-registrarse:hover {
+  box-shadow: 0px 0px 10px 4px var(--color-red);
+}
+.intento img{
+  width: 10rem !important;
+}
+
+/* === logueate === */
+
+.registro .logueate {
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.registro .logueate a {
+  color: var(--color-red);
+}
+.registro .inputs {
+  width: 33rem;
+}
+
+/* ======= TABLET ======= */
+@media (min-width: 768px) {
+  .tituloSubtitulo{
+    margin: 3rem !important;
+  }
+  .intento{
+    width: 50%;
+  }
+  .intento img{
+    width: 17rem !important;
+    margin-left: -4rem;
+
+  }
+  
+  .registro-body {
+    background-color: var(--color-independence);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .registro {
+    margin: 1rem auto;
+    border-radius: 20px;
+
+    max-width: 80vw;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  /* ===== logo-info ===== */
+
+  .registro .logo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 45%;
+    height: 100%;
+  }
+
+  /* === logo === */
+  .registro .logo-info .img {
+    width: 20rem;
+    height: 45%;
+  }
+
+  /* === info === */
+  .registro .logo-info .info {
+    width: 100%;
+    height: 45%;
+    margin-left: 4rem;
+    margin-top: 0;
+  }
+
+  .registro .logo-info .info h4 {
+    margin: 0;
+    height: 30%;
+    font-size: 1.3rem;
+  }
+
+  .registro .logo-info .info .p-margin-top {
+    margin-top: 10px;
+    height: 67%;
+  }
+
+  .registro .logo-info .info .p-margin-top p {
+    font-size: 1.4rem;
+  }
+
+  /* ===== registrarse ===== */
+
+  .registro .registrarse {
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    justify-content: space-around;
+  }
+
+  /* ===== cuenta-google ===== */
+  .registro .cuenta-google {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 6%;
+  }
+  .registro .inputs .error-empty{
+    font-size: 1.2rem !important;
+  }
+  /* ===== inputs ===== */
+  .registro .inputs {
+  width: 100%;
+    margin: 1rem;
+    justify-content: space-between;
+  }
+
+ .registro .inputs div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  } 
+
+  .registro .inputs input {
+    font-family: "Bebas Neue", cursive;
+    width: 100%;
+    height: 3rem !important;
+    margin: 0 !important;
+    font-size: 1.6rem;
+  }
+
+  /* ===== label ===== */
+  .registro .inputs div label {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* ===== span ===== */
+  .registro .inputs div span {
+    margin: 0;
+    height: 2rem;
+    width: 18rem;
+  }
+#imagenUsuario{
+  font-size: 7px !important;
+}
+input{
+  font-size: 10px;
+}
+
+  /* ===== boton ===== */
+  .registro .inputs .btn-registrarse {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 3px;
+    width: 8rem;
+  }
+
+  /* ===== logueate ===== */
+  .registro .logueate {
+    font-size: 1.4rem;
+    height: 17%;
+    margin: 0;
+  }
+  .intento img{
+    width: 30rem !important ;
+    margin-left: -10rem;
+
+  }
+}
+
+/* ====== DESKTOP ======*/
+
+@media (min-width: 1024px) {
+  .intento img{
+    width: 30rem !important ;
+    margin-left: -5rem;
+
+  }
+  #imagenUsuario{
+    font-size: 17px !important;
+  }
+  input{
+    font-size: 20px;
+  }
+  
+  .registro {
+    max-width: 65vw;
+  }
+
+  .registro .inputs {
+    width: 90%;
+  }
+  .registro .inputs label {
+    width: 100%;
+  }
+  .registro .inputs .invalid-feedback {
+    font-size: 1.2rem !important;
+    } 
+
+  .registro .inputs span {
+    font-size: 1.3rem;
+  }
+  .registro .inputs input {
+    margin-bottom: 0;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .registro .logo-info .img {
+    width: 40rem !important;
+    margin-left: -14rem;
+  }
+}
+
+@media (min-width: 1300px) {
+
+  .tituloSubtitulo{
+    margin: 3rem !important;
+  }
+  .registro{
+    width: 60% !important;
+    justify-content: center;
+    margin: 0;
+  }
+  .registro .logo-info {
+    justify-content: space-evenly;
+    
+  }
+  .registro .logo-info .info {
+    height: 24%;
+    font-size: 1.6rem;
+  }
+  .registro .logo-info .info h4 {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+  
+  .registro .inputs{
+    justify-content: center;
+  }
+  .registro .inputs input {
+    font-size: 1.7rem;
+    margin: 0;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .registro .inputs .cont-input{
+   width: 20rem !important;
+   margin-bottom: 1.5rem !important;
+  }
+  .registro .inputs .error-empty{
+   width: 26rem !important;
+   margin-bottom: 1.5rem !important;
+   font-size: 1.2rem !important;
+   text-align: right !important;
+  }
+  .registro .inputs .invalid-feedback{
+    margin-bottom: 0rem !important;
+  }
+  .registro .inputs .container-button{
+    width: 15rem !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .registro .cont-logueate{
+    margin-bottom: 1rem !important;
+    width: 21rem;
+    display: flex;
+    justify-content: end;
+
+  }
+  .registro .logueate{
+    font-size: 1.4rem !important;
+    margin: auto !important;;
+  }
+
+  .registro .inputs div span {
+    font-size: 1.3rem;
+  }
+  .registro .inputs .invalid-feedback {
+    font-size: 1.5rem !important;
+    } 
+  .registro .inputs .btn-registrarse {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 0.5rem;
+    width: 8rem;
+  }
+  .intento img{
+    width: 30rem !important ;
+    margin-left: -15rem;
+
+  }
+}

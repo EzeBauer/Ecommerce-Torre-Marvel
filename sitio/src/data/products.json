@@ -1,0 +1,49 @@
+[
+       
+{
+     
+    "id": 1,
+    "title": "Muñeco de Spider Man",
+    "description": "Muñeco articulado de 20cm de alto y 7 cm de ancho",
+    "price": 180,
+    "image": "muñeco-spiderMan.jpg",
+    "category": "muñeco"
+  },
+  {
+    "id": 2,
+    "title": "muñeco de Venom",
+    "description": "Muñeco articulado de 20cm de alto y 7 cm de ancho",
+    "price": 200,
+    "image": "muñeco-Venom.jpg",
+    "category": "muñeco"
+  },
+  {
+    "id": 3,
+    "title": "muñeco de Capitan America",
+    "description": "Muñeco articulado de 20cm de alto y 7 cm de ancho",
+    "price": 300,
+    "image": "muñeco-CapitanAmerica.jpg",
+    "category": "muñeco"
+  },
+  
+  {
+    "id": 4,
+    "title": "Muñeco de Thanos",
+    "description": "Muñeco articulado de 20cm de alto y 7 cm de ancho",
+    "price": 150,
+    "image": "muñeco-Thanos.jpg",
+    "category": "muñeco"
+  },
+  {
+    "id": 5,
+    "title": "Muñeco de Hulk",
+    "description": "Muñeco articulado de 20cm de alto y 7 cm de ancho",
+    "price": 250,
+    "image": "muñeco-hulk.jpg",
+    "category": "muñeco"
+  }
+
+
+
+
+]

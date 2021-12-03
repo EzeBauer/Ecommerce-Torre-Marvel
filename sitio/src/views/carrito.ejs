@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+
+
+
+
+            <div class="carrito">
+
+                <section class="carrito-encabezado">
+                    <div class="carrito-encabezado-titulo">
+                        <h1>Carrito de compras-productos torre marvel</h1>
+                    </div>
+                    
+                   
+                </section>
+                <main>
+                    <div class="contenedor">
+
+                       
+                    </div>
+                     <div class="carrito-facturacion-cobro-total-general">
+                                    <div class="carrito-facturacion-cobro-total-general-i">
+                                        <span class="carrito-facturacion-cobro-total-general-i-precio">Total</span>
+                                        <span class="total"> </span>
+                                    </div>
+                                </div>
+
+
+
+
+                    
+                            <div class="carrito-facturacion-cobro-total-general-cuotas">
+                                <a href="">Ver cuotas</a>
+                                <h6>IVA incluido</h6>
+                            </div>
+                       <section class="carrito-facturacion">
+                            <div class="carrito-facturacion-tarjetas">
+                                <div class="carrito-facturacion-tarjetas-descuento">
+                                <h3>Codigo de descuento</h3>
+                                <form action=""><input type="text" placeholder="Ingrese codigo"></form>
+                            </div> 
+                                <div class="carrito-facturacion-tarjetas-descuento-imagen">
+                                    <img src="/images/tarjetas.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="carrito-encabezado-titulo-button1">
+                            <button><a href="/productos/finalizado/" class="finalizarCompra">PROCEDER A LA COMPRA</a> </button>
+                            </div>
+                        </section>
+
+                          <!--   <div class="carrito-facturacion-cobro">
+                                
+                               
+                           </div> -->
+
+
+                </main>
+            </div>
+
+            <%- include('./partials/footer') %>
+
+                <%- include('./partials/scripts') %>
+    </body>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="/javascript/finalizarCompra.js"> </script>
+
+</html>

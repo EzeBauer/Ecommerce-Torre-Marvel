@@ -1,0 +1,131 @@
+
+@media (min-width: 320px){  .kids{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: none !important;
+    
+}
+.black{
+    background-color: black;
+}
+#game-iframe{
+    margin: 30px;
+    width: 80%;
+    height: 50rem;
+}
+.ironman{
+    animation-duration: 7s !important;
+    width: 30%;
+}
+.ironman img{
+    width: 50%;
+    
+}
+.loki{
+    animation-duration: 5s !important;
+
+    width: 30%;
+}
+.loki img{
+    width: 100%;}
+    #game-iframe{
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+    }
+.spidergame iframe{
+ display: none;
+}
+.spidergame .ironman{
+    display: none;
+}
+.spidergame .loki{
+    width: 20%;
+}
+.spidergame .loki img{
+    width: 100%;
+}
+.colorear{
+    font-family: 'Bebas Neue';
+color: red !important;
+text-align: center !important;
+margin-bottom: 15px;}
+.imagenesparacolorear img{
+    border-radius: 10px;
+    border: 3px outset red;
+    width: 100%;
+}
+}
+
+@media (min-width: 768px){
+    .ironman{
+        animation-duration: 7s !important;
+        width: 30%;
+    }
+    .ironman img{
+        width: 50%;
+        
+    }
+    .loki{
+        animation-duration: 5s !important;
+    
+        width: 30%;
+    }
+    .loki img{
+        width: 50%;
+    }
+    #game-iframe{
+        margin: 10px;
+        width: 50%;
+        height: 20rem;
+    }
+  
+}
+
+@media (min-width: 1024px){
+
+    .kids{
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        border: none !important;
+        margin: none !important;
+        padding: none !important;
+    }
+    #game-iframe{
+        margin: 30px;
+        width: 80%;
+        height: 50rem;
+    }
+    .ironman{
+        animation-duration: 7s !important;
+        width: 30%;
+    }
+    .ironman img{
+        width: 80%;
+        
+    }
+    .loki{
+        animation-duration: 5s !important;
+    
+        width: 30%;
+    }
+    .loki img{
+        width: 100%;
+    }
+    .spidergame iframe{
+        display: flex;
+
+    }
+    .spidergame .ironman{
+        display: block;
+    }
+    .colorear{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 4rem;
+    }
+}

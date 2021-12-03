@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+
+  <body class="registro-body">
+    <div class="tituloSubtitulo">
+    <h1 class="titulo">Sumate a nuestra comunidad para poder disfrutar nuestros beneficios</h1>
+    <div class="p-margin-top container subtitulo">
+      <p>Comprar en nuestro sitio,
+      Enterarte novedades,
+      Sorteos y Descuentos Exclusivos
+      y más...</p>
+    </div>
+  </div>
+
+    <main class="registro">
+      <section class="logo-info">
+        <div class="intento"><a href="/users/login">
+          <img src="/images/torre.png" alt="logo-torre" /></a>
+        </div>
+        </div>
+      </section>
+      <section class="registrarse">
+        <form action="" method="POST" id="form-register" class="needs-validation inputs" enctype="multipart/form-data" novalidate>
+          
+          <div class="container">
+            
+          <div class="cont-input">
+            <input type="text" id="validationCustom01" class="form-control" name="nameUser" placeholder="Nombre de usuario" value="<%=locals.old && old.nameUser? old.nameUser :null %>" required/>
+            <span class="alerta"><%= locals.errors && errors.nameUser ? errors.nameUser.msg : null %></span>
+          <div class="invalid-feedback  error-nameUser"> </div>
+          </div>
+
+          <div class="cont-input">
+            <input type="text" id="validationCustom02" class="form-control" name="firstName" placeholder="Nombre" value="<%=locals.old && old.firstName? old.firstName :null %>" required/>
+           <span class="alerta"><%= locals.errors && errors.firstName ? errors.firstName.msg : null %></span>
+           <div class="invalid-feedback error-firstName"> </div>
+          </div>
+
+          <div class="cont-input">
+            <input type="text" id="validationCustom05" class="form-control" name="lastName" placeholder="Apellido" value="<%=locals.old && old.lastName? old.lastName :null %>" required/>
+           <span class="alerta"><%= locals.errors && errors.lastName ? errors.lastName.msg : null %></span>
+           <div class="invalid-feedback error-lastName"> </div>
+          </div>
+
+          <div class="cont-input">
+            <input type="email" id="validationCustom03" class="form-control" name="email" placeholder="Email" value="<%=locals.old && old.email? old.email :null %>" required/>
+           <span class="alerta"><%= locals.errors && errors.email ? errors.email.msg : null %></span>
+            <div class="invalid-feedback error-email"> </div>
+          </div>
+
+          <div class="cont-input">
+            <input type="password" id="validationCustom04"class="form-control"  name="password" placeholder="Contraseña" required/>
+           <span class="alerta"><%= locals.errors && errors.password ? errors.password.msg : null %></span>
+            <div class="invalid-feedback error-password"> </div>
+          </div>
+        </div>
+        <div class="error-empty cont-input text-danger"></div>
+
+        <div class="container-button">
+          <button type="submit" class="btn-registrarse">REGISTRARSE</button>
+
+        </div>
+        </form>
+        <div class="cont-logueate">
+          <h2 class="logueate">
+            Si ya tenes Cuenta
+            <a href="/users/login">Logueate</a>
+          </h2>
+        </div>
+      </section>
+    </main>
+    <script src="/javascript/validateFormRegister.js"></script>
+  </body>
+
+</html>

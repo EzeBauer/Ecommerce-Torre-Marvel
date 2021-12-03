@@ -1,0 +1,381 @@
+
+@media (min-width: 319px){
+    .random{
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #imageboxxx{
+        background-color: rgb(234, 0, 0,0.5);
+        color: white;
+        padding: 10px;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Bebas Neue';
+    }
+    .random button{
+        width: 30rem;
+        height: 7rem;
+        background-color: red;
+        font-family: 'Bebas Neue';
+        font-size: 2.5rem;
+        margin: 10px;
+    }
+    #imagebox{
+        font-size: 5rem;
+        font-family: 'Bebas Neue';
+
+    }
+    #imageboxx img{
+      width: 15rem !important;
+    }
+    .random img{
+        width: 3rem !important;
+    }
+    .botonalazar{
+        font-family: 'Bebas Neue';
+
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .fondo2{
+        background-image: url("/images/0e6056e77dadf86ab7f51438f8565313.jpg") !important;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      
+    }
+    .form2{
+        border: red 9px outset;
+        border-radius: 10px;
+    }
+   
+
+.opinion{
+    font-family: 'Bebas Neue';
+
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 2px;
+}
+.strangetext{
+    font-family: 'Bebas Neue';
+    text-shadow: -5px 5px #558ABB;
+
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.test{
+    display: flex;
+}
+.strange{
+    font-family: 'Bebas Neue';
+
+    width: 50%;
+}
+.strange img{
+    width: 100%;
+}
+.botonesdeprueba{
+    font-family: 'Bebas Neue';
+
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@keyframes botonmistico {
+    0%   {border-radius: 0px;background-color: red;}
+    50%  {border-radius: 70px;background-color: blue;}
+    100% {    border-radius: 0px ;
+        background-color: green;}
+  }
+
+  @keyframes botonnegativo {
+    0%   {}
+    3%  {display: none !important;}
+  
+  }
+  .botoncorrecto:hover{
+    animation-name: botonmistico;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+  }
+.botonesdeprueba button{
+    font-family: 'Bebas Neue';
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+    color: black;
+    background-color: red;
+   
+}
+/* .negativa:hover{
+    animation-name:botonnegativo ;
+    animation-duration: ;
+
+
+} */
+#mensaje{
+    font-family: 'Bebas Neue';
+
+    text-align: center;
+    font-size: 60px;
+    background-color: blue;
+    color: red;
+    border:10px outset red;
+    animation-duration: 10s !important;
+
+}
+
+    .TIENDA2{
+         
+        width: 90%;
+        font-size: 1.8rem;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: none !important;
+        
+
+    }
+
+.quizz main{
+    background-color: white !important;
+}
+.container3{
+    font-family: 'Bebas Neue';
+
+    text-align: center !important;
+    align-items: center !important;
+    justify-content:  center !important;
+    font-size: 1.2rem;
+   
+    
+}
+.container input{
+    text-align: center !important;
+    justify-content:  center !important;
+    margin: 20px !important;
+    font-size: 1rem;
+
+
+}
+.container{
+    font-family: 'Bebas Neue';
+
+
+}
+.pregunta{
+    font-family: 'Bebas Neue';
+
+    color:red;
+    font-size: 2rem;
+    border-bottom: 9px solid blue;
+    border-top: 9px solid red;
+
+}
+.pregunta:first-child{
+    border-top: none;
+}
+.tabla{
+    font-family: 'Bebas Neue';
+
+    background-color: blue;
+}
+.QUIZTITLE{
+    font-family: 'Bebas Neue';
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: red;
+}
+td{
+    background-color: rgb(225, 225, 255);
+}
+.titulogeneral{
+    font-family: 'Bebas Neue';
+
+    background-color: white;
+}}
+
+
+
+
+
+@media (min-width: 768px){
+
+    .TIENDA2{
+        
+             
+            width: 90%;
+            font-size: 6rem;
+            font-family: 'Bebas Neue';
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+      
+    
+        
+    }
+    .quizz{
+        background-image: url("/images/0e6056e77dadf86ab7f51438f8565313.jpg");
+    }
+    .quizz main{
+        background-color: white !important;
+    }
+    .quizz .container{
+        text-align: center !important;
+        align-items: center !important;
+        justify-content:  center !important;
+        font-size: 3rem;
+       
+        
+    }
+    .container input{
+        text-align: center !important;
+        justify-content:  center !important;
+        margin: 40px !important;
+        font-size: 2rem;
+    
+    
+    }
+    .container{
+        font-family: "Ubuntu", sans-serif;
+    
+    
+    }
+    .pregunta{
+        color:red;
+        font-size: 5rem;
+        border-bottom: 9px solid blue;
+        border-top: 9px solid red;
+    
+    }
+    .pregunta:first-child{
+        border-top: none;
+    }
+    .tabla{
+        background-color: blue;
+    }
+    .QUIZTITLE{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        color: red;
+    }
+    td{
+        background-color: rgb(225, 225, 255);
+    }
+    .titulogeneral{
+        background-color: white;
+    }
+    .botonquizz{
+        font-family: 'Bebas Neue';
+
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+    .test{
+        font-family: 'Bebas Neue';
+
+        display: flex;
+    }
+    .strange{
+        width: 50%;
+    }
+    .strange img{
+        width: 70%;
+    }
+    .botonesdeprueba{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .botonesdeprueba button{
+        padding: 40px;
+        font-size: 20px;
+    }
+    .negativa:hover{
+        color: blue;
+        display: none !important;
+
+
+    }
+    #mensaje{
+        font-family: 'Bebas Neue';
+
+        text-align: center;
+        font-size: 150px;
+        background-color: blue;
+        color: red;
+        border:10px outset red;
+        animation-duration: 10s !important;
+
+    }
+    .opinion{
+        font-family: 'Bebas Neue';
+
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        font-size: 3rem;
+    }
+    .strangetext{
+        font-family: 'Bebas Neue';
+
+        background-color: transparent;
+        text-align: center;
+        font-weight: bold;
+        font-size: 7rem;
+    }
+   
+   
+}
+@media (min-width: 1024px){ .form2{
+    font-size: 5rem;
+}
+
+.random button{
+    width: 30rem;
+    height: 7rem;
+    background-color: red;
+    font-family: 'Bebas Neue';
+    font-size: 3rem;
+    margin: 10px;
+}
+#imagebox{
+    font-size: 7rem;
+    color: white;
+    text-shadow:5px 5px 5px red;
+    font-family: 'Bebas Neue';
+
+}
+#imageboxx img{
+  width: 40rem !important;
+}
+#imageboxxx{
+    background-color: rgb(234, 0, 0,0.5);
+    color: white;
+    padding: 10px;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Bebas Neue';
+}}

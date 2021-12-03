@@ -1,0 +1,193 @@
+@import url("./general.css");
+.carga-de-producto{
+    background-color: var(--color-blue);
+    font-family: 'Ubuntu',sans-serif;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.carga-de-producto .volver{
+    display: flex;
+    justify-content: space-around;    
+    align-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+.carga-de-producto .volver a{
+    color: #fff;
+}
+.carga-de-producto .carga{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    height: 100vh;
+    
+}
+
+/* === FORMULARIO === */
+.carga-de-producto .form{
+    text-align: center;
+    width: 60%;
+    max-width: 70vw;
+    border-radius: 10px;
+   
+}
+
+.carga-de-producto h1{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+} 
+
+.carga-de-producto .form div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0.5rem;
+    
+}
+
+.carga-de-producto .form label{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.carga-de-producto .form input, textarea{
+    border: none;
+    border-bottom: 1.5px solid white;
+    background-color: rgba(255, 0, 0, 0);
+    margin: 1rem;
+    padding: 0.4rem;
+    color: #fff;
+}
+
+.carga-de-producto .form  #imagenProducto{
+    border-bottom: none;
+    color: rgb(209, 209, 209);
+} 
+.carga-de-producto .form input:focus-visible, textarea:focus-visible{
+    outline: none;
+    box-shadow: 2px 2px 3px 2px white;
+    
+}
+
+.carga-de-producto .form input::placeholder, textarea::placeholder{
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 400;
+}
+.error-carga{
+    font-size: 1.3rem;
+    color: rgb(145, 9, 9);
+}
+/* === boton === */
+.carga-de-producto .form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carga-de-producto .form button{
+        font-family: "Bebas Neue", cursive;
+        font-size: 2rem;
+        border-radius: 16px;
+        border: none;
+        padding: 0.5rem;
+        width: 9rem;
+        background-color: var(--color-red);
+        color: white;
+        margin-bottom: 1rem;
+}
+
+.carga-de-producto .form button:hover {
+    box-shadow: 0px 0px 10px 4px var(--color-red);
+}
+
+
+@media (min-width: 700px){
+    .carga-de-producto .form{
+        text-align: center;
+        width: 60%;
+        max-width: 50vw;
+        border-radius: 10px;
+       background-color: #fff;
+    }
+    .carga-de-producto .volver{
+        justify-content: space-around;    
+        margin-bottom: 2rem;
+    }
+    .carga-de-producto .volver a{
+        font-size: 1.5rem;
+     }
+
+    .carga-de-producto .form label{
+        color: black;
+        font-size: 1.6rem;
+    }
+
+    .carga-de-producto .form input, textarea{
+         border-bottom: 1.5px solid var(--color-oxfordBlue); 
+         color: #000;
+         font-size: 1.6rem;
+    }
+    .carga-de-producto .form select {
+        font-size: 1.6rem;
+        width: 50%;
+        align-self: center;
+    }
+    .carga #descripcion{
+        resize: none;
+    }
+
+    .carga-de-producto .form  #imagenProducto{
+         color: var(--color-oxfordBlue); 
+
+    } 
+    
+    .carga-de-producto .form input:focus-visible, textarea:focus-visible{
+        box-shadow: 4px 4px 5px 4px var(--color-independence);
+    }
+    .carga-de-producto .form input::placeholder, textarea::placeholder{
+        color: var(--color-black);
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .carga-de-producto .form{
+        width: 60%;
+        max-width: 40vw;
+        box-shadow: 0px 0px 7px 1px var(--color-oxfordBlue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carga-de-producto .form div{
+       margin-bottom: 1rem;
+        width: 80%;
+        max-width: 90%;
+    }
+
+    .carga-de-producto .form label{
+        color: black;
+    }
+    
+
+    .carga-de-producto .form input::placeholder, textarea::placeholder{
+        color: var(--color-black);
+        text-align: center;
+        
+    }
+    .carga-de-producto .form  #imagenProducto{
+   margin: auto;
+
+   } 
+}

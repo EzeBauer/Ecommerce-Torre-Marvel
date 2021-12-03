@@ -1,0 +1,356 @@
+[
+ {
+  "id": 1,
+  "nombre": "Mochila",
+  "imagen": "Mochila.jpeg",
+  "precio": 200,
+  "marca": "Toysman",
+  "estado": "oferta",
+  "descripcion": "Mochila Escolar",
+  "discount": 80,
+  "categoria": 2
+ },
+ {
+  "id": 2,
+  "nombre": "Reloj Aracnido",
+  "imagen": "Reloj-hombreAraña.jpg",
+  "precio": 300,
+  "marca": "Toysman",
+  "descripcion": "Justo a tiempo",
+  "categoria": 2
+ },
+ {
+  "id": 3,
+  "nombre": "Walkie Talkie",
+  "imagen": "Walkie-Talkies.jpeg",
+  "precio": 400,
+  "marca": "HASBRO",
+  "descripcion": "Excelente estado",
+  "categoria": 2
+ },
+ {
+  "id": 4,
+  "nombre": "Spiderman #756",
+  "imagen": "comic1.jpg",
+  "precio": 200,
+  "marca": "Ovnipress",
+  "descripcion": "Tomo unico",
+  "categoria": 3
+ },
+ {
+  "id": 5,
+  "nombre": "Spiderman #715",
+  "imagen": "comic2.png",
+  "precio": 300,
+  "marca": "Ovnipress",
+  "discount": 80,
+
+  "descripcion": "Tomo unico",
+  "categoria": 3
+ },
+ {
+  "id": 6,
+  "nombre": "Spiderman #210",
+  "imagen": "comic3.jpg",
+  "precio": 400,
+  "marca": "Ovnipress",
+  "estado": "oferta",
+  "descripcion": "Tomo original",
+  "categoria": 3
+ },
+ {
+  "id": 7,
+  "nombre": "Skrull America",
+  "imagen": "figur8.jpg",
+  "precio": 800,
+  "marca": "Capcom",
+  "descripcion": "Figura de 20cm",
+  "categoria": 4
+ },
+ {
+  "id": 8,
+  "nombre": "Dr Doom",
+  "imagen": "figura1.jpg",
+  "precio": 1300,
+  "marca": "Capcom",
+  "descripcion": "Figura de 40cm",
+  "categoria": 4
+ },
+ {
+  "id": 9,
+  "nombre": "Spiderman Ultimate",
+  "imagen": "figura2.jpg",
+  "precio": 1200,
+  "marca": "Capcom",
+  "descripcion": "Figura de 25cm",
+  "categoria": 4
+ },
+ {
+  "id": 10,
+  "nombre": "Capitan America",
+  "imagen": "figura3.jpg",
+  "precio": 1200,
+  "marca": "Capcom",
+  "descripcion": "Figura de 35cm",
+  "categoria": 4
+ },
+ {
+  "id": 11,
+  "nombre": "Falcon Soldier",
+  "imagen": "figura4.jpg",
+  "precio": 1400,
+  "marca": "Capcom",
+  "descripcion": "Figura de 30cm",
+  "categoria": 4
+ },
+ {
+  "id": 12,
+  "nombre": "Combo X-MEN",
+  "imagen": "figura5.jpg",
+  "precio": 2000,
+  "marca": "Capcom",
+  "descripcion": "Figuras de 35cm",
+  "categoria": 4
+ },
+ {
+  "id": 13,
+  "nombre": "Wolverine",
+  "imagen": "figura6.jpg",
+  "precio": 1400,
+  "marca": "HASBRO",
+  "descripcion": "Figura de 20cm",
+  "categoria": 4
+ },
+ {
+  "id": 14,
+  "nombre": "Deadpool",
+  "imagen": "figura7.jpg",
+  "precio": 1400,
+  "marca": "HASBRO",
+  "descripcion": "Figura de 25cm",
+  "categoria": 4
+ },
+ {
+  "id": 15,
+  "nombre": "Alpargatas",
+  "imagen": "mercha1.jpg",
+  "precio": 400,
+  "marca": "47 Street",
+  "estado": "oferta",
+  "descripcion": "comodidad infinita",
+  "categoria": 2
+ },
+ {
+  "id": 16,
+  "nombre": "Taza Capitan America",
+  "imagen": "mercha2.jpg",
+  "precio": 400,
+  "marca": "Mattel",
+  "descripcion": "Porcelana",
+  "categoria": 2
+ },
+ {
+  "id": 17,
+  "nombre": "Taza Spiderman",
+  "imagen": "mercha3.jpg",
+  "precio": 400,
+  "marca": "Mattel",
+  "descripcion": "Porcelana",
+  "categoria": 2
+ },
+ {
+  "id": 18,
+  "nombre": "Almohada escudo",
+  "imagen": "mercha4.jpg",
+  "precio": 600,
+  "marca": "cannon",
+  "estado": "oferta",
+  "discount": 80,
+
+  "descripcion": "hecha de algodon",
+  "categoria": 2
+ },
+ {
+  "id": 19,
+  "nombre": "Taza vengadores",
+  "imagen": "mercha6.jpg",
+  "marca": "Mattel",
+  "precio": 350,
+  "descripcion": "Plastico infantil",
+  "categoria": 2
+ },
+ {
+  "id": 20,
+  "nombre": "Poster Estados unidos",
+  "imagen": "poster.jpeg",
+  "marca": "Mattel",
+  "precio": 250,
+  "descripcion": "Poster edicion limitada",
+  "categoria": 2
+ },
+ {
+  "id": 21,
+  "nombre": "Taza marvel",
+  "imagen": "mercha7.jpg",
+  "precio": 400,
+  "marca": "Mattel",
+  "descripcion": "Porcelana",
+  "categoria": 2
+ },
+ {
+  "id": 22,
+  "nombre": "Remera Marvel",
+  "imagen": "remera1.jpg",
+  "precio": 550,
+  "marca": "Gucci",
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 23,
+  "nombre": "Buzo marvel",
+  "imagen": "ropa2.jpg",
+  "discount": 10,
+
+  "precio": 650,
+  "marca": "Gucci",
+  "descripcion": "Buzo de Lana",
+  "categoria": 1
+ },
+ {
+  "id": 24,
+  "nombre": "Remera Wakandiana",
+  "imagen": "ropa3.jpg",
+  "estado": "oferta",
+  "marca": "Gucci",
+  "precio": 550,
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 25,
+  "nombre": "Remera C.Marvel",
+  "imagen": "ropa4.jpg",
+  "precio": 550,
+  "marca": "Gucci",
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 26,
+  "nombre": "Remera C.America",
+  "imagen": "ropa5.jpg",
+  "precio": 550,
+  "marca": "Gucci",
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 27,
+  "nombre": "Remera Spidey",
+  "imagen": "ropa6.jpg",
+  "precio": 550,
+  "marca": "Gucci",
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 28,
+  "nombre": "Remera Vengadores",
+  "imagen": "ropa9.jpg",
+  "precio": 550,
+  "marca": "Gucci",
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 29,
+  "nombre": "Remera Capitan America",
+  "imagen": "ropa10.jpg",
+  "precio": 550,
+  "marca": "Gucci",
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 30,
+  "nombre": "Remera Capitan America",
+  "imagen": "ropa11.jpg",
+  "precio": 550,
+  "marca": "Gucci",
+  "descripcion": "Remera de poliester",
+  "categoria": 1
+ },
+ {
+  "id": 31,
+  "nombre": "Marvel #1000",
+  "imagen": "comic6.jpg",
+  "precio": 250,
+  "marca": "Ovnipress",
+  "discount": 12,
+
+  "descripcion": "Tomo unico",
+  "categoria": 3
+ },
+ {
+  "id": 32,
+  "nombre": "Spiderverse #3",
+  "imagen": "comic7.jpeg",
+  "precio": 250,
+  "marca": "Ovnipress",
+  "descripcion": "Tomo unico",
+  "categoria": 3
+ },
+ {
+  "id": 33,
+  "nombre": "Vengadores #556",
+  "imagen": "comic8.jpg",
+  "precio": 250,
+  "marca": "Ovnipress",
+  "descripcion": "Tomo unico",
+  "categoria": 3
+ },
+ {
+  "id": 34,
+  "nombre": "Marvel #755",
+  "imagen": "comic9.jpg",
+  "precio": 250,
+  "marca": "Ovnipress",
+  "descripcion": "Tomo unico",
+  "categoria": 3
+ },
+ {
+  "id": 35,
+  "nombre": "Shang chi #206",
+  "imagen": "comic10.jpg",
+  "precio": 200,
+  "marca": "Ovnipress",
+  "discount": 16,
+
+  "descripcion": "Tomo unico",
+  "categoria": 3
+ },
+ {
+    "id": 36,
+    "nombre": "zaraza222",
+    "imagen": "Mochila.jpeg",
+    "precio": 200,
+    "marca": "Toysman",
+    "estado": "oferta",
+    "descripcion": "Mochila Escolar",
+    "discount": 80,
+    "categoria": 2
+   }
+   ,
+ {
+    "id": 37,
+    "nombre": "zaraza",
+    "imagen": "Mochila.jpeg",
+    "precio": 200,
+    "marca": "Toysman",
+    "estado": "oferta",
+    "descripcion": "Mochila Escolar",
+    "discount": 80,
+    "categoria": 2
+   }
+]

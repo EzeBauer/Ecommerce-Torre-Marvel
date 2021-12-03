@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+
+<body class="quizz">
+    <div class="fondo2"></div>
+
+ 
+    <%- include('./partials/header') %>
+
+    <% if (resultado[0]==null){ %>
+            <div class="titulodestacado3">
+            <h3>No hay resultado para tu busqueda </h3>
+
+            </div>
+
+
+
+
+    <% } else{ %>
+        
+    <div class="productostotales">
+        <% resultado.forEach(resultado => { %>
+     
+        <article class="cadadestacado2">
+            <a href="/productos/detail/<%= resultado.id %> "><img  class="cadadestacado2" src="/images/merchandising/<%=resultado.image%> " alt=""></a>
+            <div class="titulodestacado2">
+            <h3><%= resultado.title %> </h3>
+            <P><%= resultado.description %></P>
+            <!-- <p><%= resultado.marca %></p> -->
+            <p>$<%= resultado.price %></p>
+
+            </div>
+
+        </article>
+        <% }) %>
+        <% } %>
+
+</div> 
+             
+              
+
+
+
+
+
+
+
+
+
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/scripts') %>

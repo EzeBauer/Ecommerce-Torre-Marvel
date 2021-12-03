@@ -1,0 +1,437 @@
+@media (min-width:320px) {
+
+.carrito h1{
+  font-size: 1.2em;
+  text-transform: uppercase;
+  }
+.carrito h2{
+  font-size: 2em;
+  text-transform: uppercase;
+  }
+  .carrito h3{
+  font-size: 1.4em;
+  text-transform: uppercase;
+  }
+.carrito h4{
+  font-size: 1.5em;
+  color: #3f4f68;
+}
+.carrito h5{
+  font-size: 1.2em;
+  color: #3f4f68;
+}
+.carrito h6{
+  font-size: .6em;
+  color: #3f4f68;
+}
+.carrito p{
+  font-size: 1.2em;
+  color: #3f4f68;
+}
+.carrito span{
+  font-size: 2em;
+  color: #3f4f68;
+}
+.carrito a{
+  font-size: 1.2em;
+}
+.carrito {
+  padding:0;
+  font-size: 12px;
+  
+}
+.carrito-encabezado {
+  background-color: #d3dcdf;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px #808282;
+  max-width: 470px; 
+  margin: 0 auto;
+  
+}
+
+.carrito-encabezado-titulo {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.carrito-encabezado-titulo-button1{
+  display:block;
+  margin-bottom: 10px;
+}
+.carrito-encabezado-titulo-button1 button{
+  background-color: #bc0000;
+  color: white;
+  border-radius: 15px;
+  font-family: "Bebas Neue"; 
+  font-weight: 900; 
+  height: 3em;
+  padding: 5px 30px;
+  font-size: 1.1em;
+}
+
+.carrito main{
+  max-width: 470px;
+  margin: 0 auto;
+}
+
+/*=====ARTICULOS=======*/
+.carrito-main-article {
+  display: flex;
+  flex-direction: column; 
+  padding: 15px 15px;
+  border-bottom: solid 1px #808282;
+  height: 100vh;
+}
+.carrito-main-producto {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.carrito-main-producto-imagen {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.carrito-main-producto-imagen img {
+  height: 100%;
+  width: 90%;
+}
+.carrito-main-producto-descripcion {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+ }
+
+.carrito-main-article-precio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5%;
+  margin-left: 10px;
+  
+}
+
+.carrito-main-article-precio-subrayado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+    
+}
+
+/*----------    SECTION FACTURACION -------------*/
+.carrito-facturacion{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  }
+
+.carrito-facturacion-tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%; 
+  padding: 10px 20px;
+}
+.carrito-facturacion-tarjetas-descuento{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.carrito-facturacion-tarjetas-descuento h3{
+  color: #3f4f68;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.carrito-facturacion-tarjetas-descuento input{
+  width: 12em;
+  height: 2em;
+  border-radius: 13px;
+  border: none;
+  
+}
+
+.carrito-facturacion-tarjetas-descuento-imagen{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: flex-end;
+  
+}
+.carrito-facturacion-tarjetas-descuento-imagen img{
+  width: 100%;
+  height: 100%;
+   
+}
+
+.carrito-facturacion-cobro{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.carrito-facturacion-cobro-subtotal{
+  width: 100%;
+  height: 30%;
+  background-color: #c8ccce;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px 20px;
+}
+
+.carrito-facturacion-cobro-total-general {
+  background-color: #bebfbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 70%;
+  padding:0 5px 20px;
+  
+}
+.carrito-facturacion-cobro-total-general-i{
+  display: flex;
+  justify-content: space-between;
+}
+.carrito-facturacion-cobro-total-general-i-precio{
+font-size: 2.3em;
+color: #3f4f68;
+}
+.carrito-facturacion-cobro-total-general-cuotas{
+  display: flex;
+  justify-content: space-between;
+}
+.carrito-facturacion-cobro-total-general-cuotas a{
+  color:#954348;
+}
+.carrito-encabezado-titulo-button2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+ }
+.carrito-encabezado-titulo-button2 button {
+  background-color: #bc0000;
+  color: white;
+  border-radius: 15px;
+  font-family: "Bebas Neue";
+  font-weight: 900; 
+  height: 3em;
+  padding: 5px 30px;
+  font-size: 1.5em;
+}
+}
+
+/*========================================================================*/
+/*=====================MEDIAS QUERIES====================*/
+
+/*=====TABLET====*/
+@media (min-width:768px) {
+  
+  .carrito{
+  font-size: 14px;
+  }
+.carrito-encabezado {
+   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 800px;
+  margin: 0 auto;
+  
+  }
+  .carrito main{
+  max-width: 800px;
+  margin: 0 auto;
+}
+  .carrito-encabezado-titulo {
+  width: 70%;
+}
+.carrito-encabezado-titulo h1 {
+  font-size: 1.4em;
+} 
+.carrito-encabezado-titulo-button1{
+  width: 30%;
+  display: flex;
+  
+}
+
+ .carrito-encabezado-titulo-button1 button {
+   background-color: #bc0000;
+  color: white;
+  border-radius: 15px;
+  font-family: "Bebas Neue"; 
+  font-weight: 900; 
+  height: 3em;
+  padding: 5px 30px;
+  font-size: 1.1em;
+} 
+
+/*=====ARTICULOS=======*/
+.carrito-main-article {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70%;
+  }
+.carrito-main-producto{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.carrito-main-producto-imagen {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding-right: 20px;
+}
+.carrito-main-producto-imagen img {
+  height: 100%;
+  width: 100%;
+}
+
+.carrito-main-producto-descripcion{
+  width: 50%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.carrito-main-article-precio {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  
+}
+
+.carrito-main-article-precio-subrayado {
+  align-items: center;
+}
+
+/*----------    SECTION FACTURACION -------------*/
+.carrito-facturacion{
+  flex-direction: row;
+  height: 35%;
+  padding-bottom: 20px;
+  }
+.carrito-facturacion-tarjetas {
+  flex-direction: row;
+  height: 100%;
+  width: 63.5%;
+  padding: 10px 10px 10px 15px;
+}
+.carrito-facturacion-tarjetas-descuento{
+  width: 100%;
+  height: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  .carrito-facturacion-tarjetas-descuento h3{
+   font-size: 1.6em;
+}
+.carrito-facturacion-tarjetas-descuento input{
+  width: 12em;
+  height: 2.5em;
+   
+}
+
+.carrito-facturacion-tarjetas-descuento-imagen{
+   height: 70%;
+ 
+}
+.carrito-facturacion-tarjetas-descuento-imagen img{
+ height: 60%;
+ margin-bottom: 10px;
+}
+
+.carrito-facturacion-cobro{
+  width: 36.5%;
+
+}
+
+.carrito-facturacion-cobro-subtotal{
+  margin: 0;
+}
+.carrito-encabezado-titulo-button2{
+  display: none;
+
+}
+
+}
+
+/*========DESKTOP=======*/
+/* @media (min-width:1024px) {
+
+ 
+  .carrito {
+  padding: 30px 80px; 
+  font-size: 20px;
+  }
+
+.carrito-encabezado {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+ 
+  }
+  .carrito main{
+  max-width: 1250px;
+  margin: 0 auto;
+  }
+  
+  .carrito-encabezado-titulo h1 {
+  font-size: 1.3em;
+} 
+
+/*=====ARTICULOS=======*/
+/* .carrito-main-article {
+  height: 50%;
+}
+.carrito-main-producto{
+  height: 100%;
+  width: 65%;
+}
+
+.carrito-main-producto-imagen {
+  flex: none;
+  width: 40%;
+  min-height: 30rem;
+  max-height: 90%;
+}
+
+.carrito-main-producto-descripcion{
+  width: 60%;
+  border-right: solid 1px #808282;
+  
+}
+
+.carrito-main-article-precio {
+  width: 35%;
+  height: 100%;
+}
+
+.carrito-main-article-precio-subrayado {
+ border-bottom: solid 1px #808282;
+}
+.carrito-facturacion-tarjetas-descuento h3{
+ font-size: 1.2em;
+}
+.carrito-facturacion{
+  height:45%;
+  padding-bottom: 0;
+  }
+  
+}  */

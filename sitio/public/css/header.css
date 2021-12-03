@@ -1,0 +1,529 @@
+header{
+    background-color:var(--color-header);
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+.centrando{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     
+}
+
+
+.ContlogoTorre{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-item{
+    font-weight: 500;
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    color: white;
+}  
+.dropdown-item:hover{
+    box-shadow: white 4px;
+     border: solid 1px white; 
+}
+.saludo{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-family: 'Ubuntu';
+    color: blue;
+     font-weight: 700;
+    
+}
+.centrarelavar{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+@media (min-width: 319px){
+    .busqueda{
+    width: 100%;
+    height: 22vh; /*aca*/
+
+}
+  
+    header nav{
+        display: flex !important;
+    }
+  
+    header{
+        border-bottom: 3px solid #262626;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .logoTorre{
+    max-width: 11em;
+    max-height: 11em;
+} 
+
+
+    .busqueda{
+        
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .imagenNavegacion{
+        width: 25%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+     .buscador{
+        width: 60%;
+    }
+   
+    .busqueda input{
+        width: 75% !important;
+        height: 30px;
+        border-radius: 10px;
+    }
+    header form{
+        display: flex !important;
+        width: 100% !important;
+    }
+    .busqueda .buscador button{
+        border: none;
+        background-color: transparent;
+    }
+    .fa-search{
+        color: white;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+  
+    .botonderegistrarse{
+        align-items: center;
+        align-self: center;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        border-left: 3px solid #262626;
+        width: 25% !important;
+            
+    }
+
+    .avatar{
+        margin-top: 5px;
+        width:50px;
+        height: 35px;
+        border-radius: 10%
+    }
+     @keyframes fantasma {
+        0%{opacity: 0%}
+        75%  {transform: translateY(-20px) translateX(-20px); opacity: 100%;}
+        100% {opacity: 0%;}
+    }
+     @keyframes fantasma2 {
+        0%{opacity: 0%}
+        75%  {transform: translateY(20px) translateX(20px); opacity: 100%;}
+        100% {opacity: 0%;}
+    }
+
+    .fijo1{
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        right: 35%;
+        top:70%;
+        background-image: url('/images/580b57fbd9996e24bc43c047.png');
+        background-size: 100% 100%; 
+        animation: fantasma2 1.5s;
+        animation-iteration-count: initial;
+        opacity: 0%;
+
+    }
+    
+      
+    .fijo2{
+
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        left: 35%;
+        top:70%;
+        background-image: url('/images/580b57fbd9996e24bc43c05b.png');
+        background-size: 100% 100%; 
+        animation: fantasma 1.5s;
+        animation-iteration-count: initial;
+        opacity: 0%;
+
+    }
+     
+    .dropdown-item{
+        font-weight: 500;
+    }  
+    .dropdown-item:hover{
+        box-shadow: white 4px;
+         border: solid 1px white; 
+    }
+    .saludo{
+        color: white;
+         font-weight: 700;
+         font-size: 10px;
+        
+    }
+    
+    
+    .botonderegistrarse button{
+        height: 20% !important;
+        
+
+    }
+    .menu a{
+    color: white;
+}
+.dropdown-toggle::after{
+    color: white;
+}
+    .menu{
+        background-color:var(--color-header);
+        color: white;
+        display: none;
+    }
+   
+    .menumobile{
+        background-color: transparent !important;
+        display:flex; /*aca*/
+        border: none;
+        color: white;
+        }
+    #dropdownMenuButton1{
+        height: 20px !important;
+        box-shadow: none !important;
+    }
+    .botonderegistrarse  #dropdownMenuButton1{
+        height: 20px !important;
+        box-shadow: none !important;
+        font-size: 25px;
+    }
+
+    
+    .fa-shopping-cart{
+        color: white;
+        font-size: 30px;
+       
+    }
+    .re{
+        display: none;
+    }
+    .buscador{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 50%;
+    }
+   
+    .botonderegistrarse .btn-secondary{
+        background-color:var(--color-header);
+        border: none;
+
+       }
+  
+      
+    .botonderegistrarse .dropdown-menu{
+        background-color:var(--color-header);
+        border-radius: 10px !important;
+
+
+    }
+
+ 
+
+}
+
+@media (min-width: 550px){
+     .botonderegistrarse{
+         width: 20% !important;
+    }
+  
+    .saludo{
+        font-size: 12px;
+    }
+  
+}
+
+@media (min-width: 768px){
+     .busqueda{
+    width: 100%;
+    height: 25vh;
+     }
+
+      .logoTorre{
+    margin-top: 14px;
+    max-width: 14em;
+    max-height: 15em;
+    }
+    .avatar{
+        width:60px;
+        height: 50px;
+        border-radius: 30%;
+    }
+
+     header{
+        
+        position: relative;
+    }
+    .imagenNavegacion{
+        width: 20% !important;
+        height: 100%;
+    }
+    .imagenNavegacion img{
+        width: 100% !important;
+    }
+     .dropdown-menu{
+        background-color:var(--color-header);
+        border-radius: 10px !important;
+    }
+
+   .saludo{
+        font-size: 14px;
+    }
+    .busqueda input{
+        width: 75% !important;
+        height: 30px;
+        border-radius: 10px;
+    }
+    header form{
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center;
+    }
+    
+  
+    
+
+.menumobile{
+    display: none;
+}
+.menu{
+   /*  height: 3.2rem; */
+    display: inline !important;
+}
+.menus ul{
+    padding-left: 0 !important;
+    
+
+}
+.resto {
+    padding-left: 0 !important;
+    display: flex !important;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #262626;
+    width: 100% !important;
+}
+
+
+.buscador input{
+    height: 30px;
+    border-radius: 15px;
+}
+.registrarse{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    width: 15%;
+    height: 50%;
+    border: none;
+    font-size: 2rem;
+    text-align: center !important;
+    margin-left: 4rem;
+    padding-top: 20%;
+    padding-bottom: 10%;
+
+
+
+}
+.fa-search{
+    font-size: 20px;
+}
+.linea{
+    display: inline !important;
+    border-left: 3px solid #262626 !important;
+}
+.buscador{
+    display: flex;
+    height: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 60%;
+
+}
+.botonderegistrarse{
+    width: 20% !important;
+    
+
+}
+header ul li a{
+    color: white !important;
+}
+.buscador{
+    width: 60%;
+}
+.imagenNavegacion{
+    border-right: 3px solid #262626 !important;
+}
+
+.resto button{
+    background-color: #262626 !important;
+    font-size: 1.3rem; /* boton menu */
+}
+
+
+.menus .btn{
+    
+    background-color: #262626 !important;
+    font-size: 1.3rem; 
+}
+.buscador input{
+    width: 70%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.menu{
+    width: 100% !important;
+    margin: auto !important;
+    display: flex !important;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.dropdown-item{
+    color: white;
+}
+header .botonderegistrarse a{
+    display: block;
+
+}
+#dropdownMenuButton1{
+    height: 100% !important;
+}
+.re{
+    display: block;
+    font-size: 1.3em;
+    
+}
+.enlinea{
+    width: 100%;
+    display: flex;
+    justify-content:space-around !important;
+    align-items: center;
+    
+
+}
+.referencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fa-shopping-cart{
+    color: white;
+    font-size: 40px;
+}
+.cargarymodificar{
+    width: 100% !important;
+    display: flex !important;
+    padding-left: 23px !important;
+
+}
+.cargarymodificar button{
+   background-color: #262626 !important;
+   font-size: 1.3rem;
+}
+}
+@media (min-width: 1024px){
+
+  .fijo1{
+        width: 80px;
+        height: 100px;
+        position: absolute;
+        right: 15%;
+        top:30%;
+  }
+   .fijo2{
+
+        width: 80px;
+        height: 100px;
+        position: absolute;
+        left: 15%;
+        top:30%;
+  }
+ .cargarymodificar{
+     width: 100% !important;
+     display: flex !important;
+     padding-left: 63px !important;
+
+ }
+ .cargarymodificar button{
+    background-color: #262626 !important;
+    font-size: 1.3rem;
+ }
+    .re{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .fa-shopping-cart{
+        color: white;
+        font-size: 40px;
+    }
+ .menu{
+display: flex !important; 
+}
+.btn{
+    width: 12rem; 
+    height: 4rem;
+}
+#dropdownMenuButton1{
+    height: 4rem !important; 
+}
+.re{
+    font-size: 2.4;
+}
+
+
+
+}
+
+/* MODAL */
+
+.modal-content{
+    background-color: #d3dcdf;
+     font-family: "Ubuntu";
+}
+
+.badge{
+   position: absolute;
+    right: 10%;
+    bottom: 50%; 
+   
+}
+.imagen-carrito{
+    position: relative;
+    margin-top: 20px;
+}
+.modal-title{
+  font-family: "Ubuntu";
+}

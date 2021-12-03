@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+
+<body class="quizz">
+    <div class="fondo2"></div>
+
+ 
+    <%- include('./partials/header') %>
+
+    <div class="titulogeneral">
+        <h2 class="TIENDA">Merchandising</h2>
+      </div>
+    <div class="productostotales">
+        <% mercha.products.forEach(mercha => { %>
+     
+        <article class="cadadestacado2">
+            <a href="/productos/detail/<%= mercha.id %>"><img  class="cadadestacado2" src="/images/merchandising/<%=mercha.image%> " alt=""></a>
+            <div class="titulodestacado2">
+            <h3><%= mercha.title%> </h3>
+            <P><%= mercha.description %></P>
+            </div>
+
+        </article>
+    
+
+    <% }) %>
+</div> 
+             
+              
+
+
+
+
+
+
+
+
+
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/scripts') %>

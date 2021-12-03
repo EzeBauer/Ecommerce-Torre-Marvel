@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+
+<body class="quizz">
+
+ 
+    <%- include('./partials/header') %>
+
+
+      <div class="titulogeneral">
+        <h2 class="TIENDA2"> <a href="#TRIVIA"> TRIVIA</a></h2>
+        <h2 class="TIENDA2"><a href="#VENGADOR"> ¿CUAL VENGADOR ERES?</a></h2>
+      </div>
+      <div class="titulogeneral QUIZTITLE">
+        <h2 class="TIENDA2"> ¿Eres un verdadero Fan de Marve? Demuestralo!</h2>
+      </div>
+
+
+
+
+      <div class="fondo2">
+      </div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+      <script language="JavaScript">
+        var alfab = "abcdefghijklmnñopqrstuvxyz"
+        var nump = 10
+        var nrp = 3
+        function corrixe() {
+          var acertos = 0
+          var sol = ""
+          fiestrar = open("", "novar", "width=300,height=350,scrollbars")
+          fiestrar.document.write("<table border='0' width='100%' cellspacing='0' cellpadding='4' bgcolor='#FFFFF2'><tr><td><p align='center'>")
+          for (i = 1; i <= nump; i++) {
+            var senresp = true
+            for (j = 1; j <= nrp; j++) {
+              if (eval("document.test.resp" + i + "[" + (j - 1) + "].checked") == true) {
+                sol += alfab.substring(j - 1, j); senresp = false; break
+              }
+            }
+            if (senresp == true) { sol += "-" }
+          }
+          var tempo = new Date()
+          fiestrar.document.write("<br>Hora: " + tempo.getHours() + ":" + tempo.getMinutes())
+          fiestrar.document.write("<br>Fecha: " + tempo.getDate() + "/" + eval(tempo.getMonth() + 1) + "/" + tempo.getYear())
+          fiestrar.document.write("<p align='center'><table>")
+          fiestrar.document.write("<tr><td colspan='4' align='center'><font size='5'>Resultados del test</font><p></td></tr>")
+          fiestrar.document.write("<tr><td width='33' bgcolor='#FFF4F4'>" +
+            "<p align='center'>Preg</td><td width='35' bgcolor='#FFF4F4' align='center'>" +
+            "Solu</td><td width='35' bgcolor='#FFF4F4' align='center'>Resp</td>" +
+            "<td width='35' bgcolor='#FFF4F4'><p align='center'>Resul</td></tr>")
+          for (i = 1; i <= sol.length; i++) {
+            respuesta = document.test.tras.value.substring(i - 1, i)
+            solucion = sol.substring(i - 1, i)
+            if (respuesta == solucion) {
+              acertos += 1
+              fiestrar.document.write("<tr><td align='center'>" + i +
+                "</td><td align='center'>" + respuesta + "</td><td align='center'>" + solucion +
+                "</td><td align='center'><font color='#009933'>acierto</font></td></tr>")
+            }
+            else {
+              fiestrar.document.write("<tr><td align='center'>" + i + "</td><td align='center'>" + respuesta +
+                "</td><td align='center'>" + solucion + "</td><td align='center'><font color='#FF0000'>fallo</font></td></tr>")
+            }
+          }
+          nota = 10 / nump * acertos;
+          if (Math.floor(nota) != Math.ceil(nota)) {
+            cadea = "" + nota; for (var i = 0; i <= cadea.length; i++) {
+              if (cadea.charAt(i) == ".") { nota = cadea.substring(0, i + 3); break; }
+            }
+          }
+          fiestrar.document.write("<tr><td colspan='4' align='center'>Aciertos: " + acertos + " de " + nump + "</td></tr>")
+          fiestrar.document.write("<tr><td colspan='4' align='center'>Muy Buen Intento!: " + nota + " La torre marvel te felicita!</td></tr>")
+          fiestrar.document.write("</td></tr><tr><td colspan='4' align='center'><p><form><input type='button' value='Cerrar' name='pecharf' onClick='window.close()' style='background-color: #FFCC66'></form></td></tr></table></td></tr></table>")
+          fiestrar.document.write("</table>")
+          fiestrar.document.close()
+
+
+
+        }
+        let felicitar = () => {
+          Swal.fire({
+          icon: "info",
+          background:'#000 url(/images/comics.jpg)',
+          position: 'center-end',
+          backdrop:`
+     rgba(5, 5, 25, 0.4)
+     url("https://thumbs.gfycat.com/NiceWillingDoctorfish.webp")
+    center center 
+    no-repeat
+    `,
+          title: "El doctor strange ya sabia que dirias que es la mejor pagina del mundo!!",
+          showConfirmButton: false,
+          timer: 2500, 
+        });
+     
+
+          return document.getElementById("mensaje").innerHTML = "Gracias por elegirnos!"
+        
+          
+          
+
+        }
+        let vengadorrandom = () => {
+         
+          let  aleatorio = Math.round(Math.random()*12);
+
+
+          console.log(aleatorio)
+          if (aleatorio===1){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[0].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[0].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "Eres tan rapido y habil como las arañas, tienes una doble vida y sin dudas seras un gran fotografo"}
+           
+
+          else if (aleatorio===2){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[1].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[1].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "De seguro tienes un gran martillo, te gusta viajar por europa y tener el pelo largo, LOKIIII"}
+
+          else if (aleatorio===3){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[2].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[2].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "tal como una hormiga aunque parezcas diminuto tienes un gran poder"}
+            else if (aleatorio===4){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[3].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[3].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "si bien no eres del todo bueno, al menos eres un gran doctor "}
+
+            else if (aleatorio===5){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[4].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[4].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "nada te detiene, eres grande por dentro como por fuera"}
+            else if (aleatorio===6){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[5].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[5].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "orgulloso y patriota, todo un capitan"}
+            else if (aleatorio===7){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[6].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[6].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "Haces que todos te hagan caso con un solo chasquido ;D"}
+            else if (aleatorio===8){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[7].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[7].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "Y tus padres dijeron que esas clases particulares no servirian para nada"}
+            else if (aleatorio===9){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[8].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[8].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "A veces para ti no todo es un lecho de rosas, APLASTA!"}
+            else if (aleatorio===10){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[9].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[9].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "Tu ....eres....iron man...(chasquea y se muere)"}
+            else if (aleatorio===11){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[10].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[10].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "Para vos todo es una broma, no sabes guardar tus sentimientos sin herir a nadie, y todo lo que haces lleva a un fracaso inminente, realmente el rey de los engaños vive en uno"}
+            else if (aleatorio===12){
+            document.getElementById('imagebox').innerHTML = "<%= superheroeparseado[11].nombre %>"
+            document.getElementById('imageboxx').innerHTML = '<img class="animate__animated animate__bounce" src="../images/<%= superheroeparseado[11].imagen%>">'
+            document.getElementById('imageboxxx').innerHTML = "sos todo un visionario, aparte de que tus amigos te ven como una maquina!"}
+       
+          }
+          
+          
+
+        
+        
+      
+
+      </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <!-- <script src="//code.tidio.co/6pullirs8m8ebzn5zvohbqs4hmup3ze3.js" async></script> -->
+
+
+
+      <div id ="TRIVIA" class="container container3">
+        <form class="form2" name="test">
+          <table width="100%">
+            <tbody>
+              <tr>
+                <td align="center">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">1. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿Cual es el primer mas joven?</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp1"></td>
+                        <td>Iron Man</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp1"></td>
+                        <td>Capitán América</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp1"></td>
+                        <td>Thor</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">2. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿Cuales son las gemas del infinito?</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp2"></td>
+                        <td>Tiempo-espacio-mente-realidad-alma-poder</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp2"></td>
+                        <td>Tiempo-realidad-alma-poder-cosmos-mente</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp2"></td>
+                        <td>Tiempo-poder-caos-gravedad-alma-mente</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">3. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿cuales de estas personas NO pudieron levantar el martillo de
+                          thor?</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp3"></td>
+                        <td>Vision</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp3"></td>
+                        <td>Capitan America</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp3"></td>
+                        <td>Iron man</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">4. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">El nombre real de doctor strange es </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp4"></td>
+                        <td>Stephano Victor strange</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp4"></td>
+                        <td>Stephen Vincent Strange</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp4"></td>
+                        <td>Stephen Smith Strange</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">5. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿De que color era hulk en sus primeros comics?</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp5"></td>
+                        <td>Verde</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp5"></td>
+                        <td>Gris </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp5"></td>
+                        <td>Azul</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">6. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿Cual de estos superheroes en el MCU jamas fue al espacio?
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp6"></td>
+                        <td>Spiderman</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp6"></td>
+                        <td>Hawkeye</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp6"></td>
+                        <td>Hulk</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">7. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿Cuales son los poderes de Ant man?</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp7"></td>
+                        <td>Super fuerza y encojerse</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp7"></td>
+                        <td>Encojerse y comunicarse con las hormigas</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp7"></td>
+                        <td>Ninguno, solo tiene un traje</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">8. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿Cual es la gema que buscan los guardianes de la galaxia en
+                          su primera pelicula?</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp8"></td>
+                        <td>Gema del alma</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp8"></td>
+                        <td>Gema del poder</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp8"></td>
+                        <td>Gema de la mente</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">9. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿Cuantos superheroes conforman el primer grupo de vengadores
+                          en el mcu?</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp9"></td>
+                        <td>7</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp9"></td>
+                        <td>8</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp9"></td>
+                        <td>6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class=pregunta>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <font size="4" color="#FF00FF">10. </font>
+                        </td>
+                        <td bgcolor="#F2FFF2" width="100%">¿De que material esta hecho el escudo del capitan america?
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>a) </td>
+                        <td><input type="radio" name="resp10"></td>
+                        <td>Vibranium</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>b) </td>
+                        <td><input type="radio" name="resp10"></td>
+                        <td>Adamantium</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td>c) </td>
+                        <td><input type="radio" name="resp10"></td>
+                        <td>Celirium</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" height="50"><input type="hidden" value="bacbabcbca" name="tras">
+                  <input class="botonquizz" type="button" value="Puntuación" name="resultados" onclick="corrixe()"
+                    style="background-color: #FFCC66">
+                  <input class="botonquizz" type="reset" value="Limpiar" name="limpar"
+                    style="background-color: #FFCC66">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+
+      </div>
+
+
+
+
+
+
+
+
+      <h2 class="strangetext"> ¿Podras contra doctor strange?</h2>
+
+      <p class="opinion">Dile que te parecio nuestra pagina....si es que puedes....</p>
+
+
+
+
+
+      <div class="test">
+        <div class="strange">
+          <img src="../images/PngItem_95650.png" alt="">
+        </div>
+        <div class="botonesdeprueba">
+          <div>
+
+            <button type="submit" class="botoncorrecto" onclick="felicitar()">ESTA PAGINA ES LO MEJOR</button>
+          </div>
+          <div>
+            <button class="negativa" type="submit">ESTA PAGINA ES LO PEOR</button>
+          </div>
+        </div>
+
+
+
+      </div>
+      <h2 id="mensaje"></h2>
+
+      <div class="titulosobrenosotros">
+        <h2 id="VENGADOR">¡Descubre que vengador eres!!</h2>
+        </div>
+
+        <div class="random">
+
+          <div class="random">
+                  <div>
+
+                    <button type="submit" class="botoncorrecto2" onclick="vengadorrandom()">Descubre que vengador eres</button>
+                  </div>
+
+                            <div class="animate__animated animate__zoomInDown" id="imagebox">  
+                              
+                            </div>
+                            <div  id="imageboxx">
+
+          </div>
+          <div id=imageboxxx>
+
+          </div>
+      </div>
+      </div>
+
+
+      <%- include('./partials/footer') %>
+  </body>
+
+</html>
