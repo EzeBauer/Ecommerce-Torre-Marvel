@@ -6,6 +6,6 @@
 
 Las tecnologias empleadas fueron:
 
-Express(node Js), motor de vistas EJS, Sequelize (ORM), MySQL.
+Express(node Js), motor de vistas EJS, Javascript, Sequelize (ORM), MySQL.
 
 
